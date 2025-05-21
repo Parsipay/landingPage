@@ -10,191 +10,353 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-    <!---------------------------------------------------------------------navbar--------------------------------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/img/logohorizintal.png" alt="logo" width="120"
-                    height="50"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">خانه</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">قیمت ارز دیجیتال</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            اخبار و مقالات
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">راهنما</a>
-                    </li>
-                </ul>
 
-                <div class="d-flex align-items-center gap-2">
-                    <div class="btn-g border-end px-4">
-                        <button type="button" class="btn  btn-outline-danger rounded-5 px-4">ورود</button>
-                        <button type="button" class="btn  btn-outline-danger   rounded-5 px-4">ثبت‌نام</button>
+    <!-- header start -->
+    <!-- nav -->
+    <!-- offconvas -->
+    <!-- header end -->
+    <!-- main start -->
+    <!-- Section Hero -->
+    <!-- container  -->
+    <!-- senction hero end -->
+    <!-- Section 5 ta arz -->
+    <!-- Section Why Parsipay -->
+    <!-- Section signup o login -->
+    <!-- Section 24 hr -->
+    <!-- Section download -->
+    <!-- main end -->
+    <!-- footer -->
+
+    <!---------------------------------------------------------------------header--------------------------------------------------------------------------------------------->
+    <header>
+        <!---------------------------------------------------------------------navbar--------------------------------------------------------------------------------------------->
+        <nav class="navbar navbar-expand-md  shadow-sm gary-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/img/logohorizintal.png" alt="logo" width="150"
+                        height="55"></a>
+
+                <!--offcanvas Button-->
+                <button class="btn btn-danger d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    منو
+                </button>
+
+                <!--navbar-->
+                <div class="collapse navbar-collapse d-none d-md-block ">
+                    <ul class="navbar-nav me-auto mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">خانه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">قیمت ارز دیجیتال</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">اخبار و مقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">راهنما</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center flex-nowrap gap-24px">
+                        <a href="#" class="btn btn-outline-danger rounded-5 min-w-103">ورود</a>
+                        <a href="#" class="btn btn-outline-danger rounded-5 min-w-103 me-1">ثبت‌نام</a>
+                        <span class="border-start border-2 ps-7px">
+                            <i class="fa-solid fa-download"></i>
+                        </span>
                     </div>
-                    <img src="/assets/img/frame.png" alt="downlogo" width="28" height="28" class="ms-4">
+                </div>
+                <!-- Offcanvas-->
+                <div class="offcanvas offcanvas-start d-md-none" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">منو</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" href="#">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">قیمت ارز دیجیتال</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">اخبار و مقالات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">راهنما</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="border-end px-4">
+                                <button class="btn btn-outline-danger rounded-5 px-4">ورود</button>
+                                <button class="btn btn-outline-danger rounded-5 px-4">ثبت‌نام</button>
+                            </div>
+                            <img src="/assets/img/frame.png" alt="downlogo" width="28" height="28" class="ms-4">
+                        </div>
+                    </div>
                 </div>
             </div>
-    </nav>
+        </nav>
+    </header>
 
-
-    <div class="container">
-        <!---------------------------------------------------------------------header--------------------------------------------------------------------------------------------->
-        <header>
-            <div class="m-5">
-                <div class="d-flex flex-column align-items-center">
-                    <h3>به جمع همراهان ما در پارسی‌پی بپیوندید.</h3>
-                    <p class="text-center text-secondary mt-3"> می توانید هرگونه سوال یا ابهام احتمالی را با تیم مجرب
-                        پشتیبانی در میان گذاشته تا به آنها پاسخ داده شود، لزوم ارتباط نزدیک و کارآمد با کاربران گرامی از
-                        اهداف اصلی این مجموعه می باشد.</p>
-                    <div class="d-flex align-items-center justify-content-between  border rounded-5 ">
-                        <input type="text" name="inpamount-1" class="form-control bg-white border-0 rounded-5 small"
+    <!----------------------------------------------------------------------main------------------------------------------------------------------------------------------->
+    <main>
+        <div class="hero py-5">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <p class="text-nowrap fw-bold divider-top">به جمع همراهان ما در پارسی‌پی بپیوندید.</p>
+                    <p class="text-center text-secondary mt-3 font-color" style="max-width:600px;">
+                        می‌توانید هرگونه سوال یا ابهام احتمالی را با تیم مجرب پشتیبانی در میان بگذارید تا به آنها پاسخ
+                        داده شود.
+                        ارتباط نزدیک و کارآمد با کاربران گرامی از اهداف اصلی این مجموعه است.
+                    </p>
+                    <div class="input-group my-4 flex-nowrap " style="max-width:450px;">
+                        <input type="text" name="inpamount-1"
+                            class="form-control outline-0 border-0 rounded-end rounded-5 gary-color "
                             placeholder=" شماره موبایل خود را وارد کنید.">
-
-                        <button type="button" class="btn btn-primary d-flex align-items-center rounded-5  px-sm-3 px-2">
-                            <span class="text-nowrap me-2 d-none d-md-block">آغاز کنید</span>
-                            <i class="fas fa-angle-left"></i>
+                        <button
+                            class="btn btn-outline-danger d-flex align-items-center gap-1 flex-nowrap rounded-start rounded-5"
+                            type="button" id="button-addon1">
+                            <span class="text-nowrap d-none d-md-block ">آغاز کنید</span>
+                            <i class="fa fa-angle-left"></i>
                         </button>
                     </div>
-
                 </div>
             </div>
-        </header>
+        </div>
+
         <!----------------------------------------------------------------part-1-------------------------------------------------------------------------------------------------->
-        <div class="row row-cols-2 row-cols-lg-5 g-3 cards-section align-items-end ">
-            <!-- box 1 -->
-            <div class="col">
-                <div class="card crypto-card bg-light border-0 rounded-4 h-100">
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/img/btc.png" alt="btc" class="me-2" width="32" height="32">
-                            <small class="fw-bold">ارز بیت کوین</small>
-                        </div>
+        <div class="cards-section">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-lg-5 g-3  align-items-end ">
+                    <!-- box 1 -->
+                    <div class="col">
+                        <div class="card crypto-card bg-light border-0 rounded-4 h-100">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/img/btc.png" alt="btc" class="me-2" width="32" height="32">
+                                    <small class="fw-bold">ارز بیت کوین</small>
+                                </div>
 
-                        <span class="fw-bold text-end fs-4 mt-3">103,452,3$</span>
+                                <span class="fw-bold text-end fs-4 mt-3">103,452,3$</span>
 
-                        <div class="d-flex justify-content-end align-items-center mt-3">
-                            <img src="./assets/img/arrow-elbow-right.png" alt="arrow" width="24" height="24">
-                            <span class="bg-danger text-light rounded-circle p-1 d-flex align-items-center">3%</span>
-                        </div>
-
-                        <div
-                            class="d-flex justify-sm-content-between flex-column flex-sm-row align-items-center mt-3 gap-1">
-                            <div class="bg-gary p-1 px-2 rounded box-up">
-                                <span>0.00001s</span>
-                                <i class="fas fa-caret-up"></i>
+                                <div class="d-flex justify-content-end align-items-center mt-3">
+                                    <img src="./assets/img/arrow-elbow-right.png" alt="arrow" width="24" height="24">
+                                    <div
+                                        class="bg-opacity-danger text-light rounded-circle p-1 py-2 d-flex justify-content-center align-items-center">
+                                        <span>۳%</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex justify-sm-content-between flex-column flex-sm-row align-items-center mt-3 gap-1">
+                                    <div class="bg-gary p-1 px-2 rounded box-up">
+                                        <span>0.00001s</span>
+                                        <i class="fas fa-caret-up"></i>
+                                    </div>
+                                    <div class="bg-gary p-1 px-2 rounded box-down">
+                                        <span class="text-danger">0.00001s</span>
+                                        <i class="fas fa-caret-down text-danger"></i>
+                                    </div>
+                                </div>
+                                <p class="mt-3 small text-muted text-md-nowrap">🔹 نوسانات 24 ساعت گذشته ارز</p>
                             </div>
-                            <div class="bg-gary p-1 px-2 rounded box-down">
-                                <span class="text-danger">0.00001s</span>
-                                <i class="fas fa-caret-down text-danger"></i>
+                        </div>
+                    </div>
+
+                    <!-- box 2 -->
+                    <div class="col">
+                        <div class="card crypto-card bg-light border-0 rounded-4 h-100">
+                            <div class="card-body d-flex flex-column  ">
+                                <img src="./assets/img/teter.png" alt="tether" class="me-2" width="32" height="32">
+                                <small class="text-secondary my-2">
+                                    <span class="fw-bold text-dark">تتر</span> (Tether)
+                                </small>
+                                <span class="fw-bold fs-4 mt-3 text-end">103,452,3$</span>
                             </div>
                         </div>
-
-                        <p class="mt-3 small text-muted text-md-nowrap">🔹 نوسانات 24 ساعت گذشته ارز</p>
                     </div>
-                </div>
 
-            </div>
+                    <!-- box 3 -->
+                    <div class="col">
+                        <div class="card bg-light border-0 rounded-4 h-100">
+                            <div class="card-body d-flex flex-column ">
+                                <img src="./assets/img/trx.png" alt="trx" class="me-2" width="32" height="32">
+                                <small class="text-secondary mt-2">
+                                    <span class="fw-bold text-dark">ترون</span> (TRX)
+                                </small>
+                                <span class="fw-bold fs-4 mt-3 text-end">103,452,3$</span>
 
-            <!-- box 2 -->
-            <div class="col">
-                <div class="card crypto-card bg-light border-0 rounded-4 h-100">
-                    <div class="card-body d-flex flex-column  ">
-                        <img src="./assets/img/teter.png" alt="tether" class="me-2" width="32" height="32">
-                        <small class="text-secondary my-2">
-                            <span class="fw-bold text-dark">تتر</span> (Tether)
-                        </small>
-                        <span class="fw-bold fs-4 mt-3 text-end">103,452,3$</span>
-                    </div>
-                </div>
-            </div>
+                                <div class="d-flex justify-content-end mt-3">
+                                    <img src="./assets/img/arrow-elbowup.png" alt="arrow" width="24" height="24">
+                                    <div
+                                        class="bg-opacity-success  rounded-circle p-1 py-2 d-flex justify-content-center align-items-center">
+                                        <span>۳%</span>
+                                    </div>
+                                </div>
 
-            <!-- box 3 -->
-            <div class="col">
-                <div class="card bg-light border-0 rounded-4 h-100">
-                    <div class="card-body d-flex flex-column ">
-                        <img src="./assets/img/trx.png" alt="trx" class="me-2" width="32" height="32">
-                        <small class="text-secondary mt-2">
-                            <span class="fw-bold text-dark">ترون</span> (TRX)
-                        </small>
-                        <span class="fw-bold fs-4 mt-3 text-end">103,452,3$</span>
-
-                        <div class="d-flex justify-content-end mt-3">
-                            <img src="./assets/img/arrow-elbowup.png" alt="arrow" width="24" height="24">
-                            <span class="bg-opacity-success rounded-circle p-1 d-flex align-items-center">3%</span>
-                        </div>
-
-                        <p class="mt-3 small text-muted text-md-nowrap">🔹 نوسانات 24 ساعت گذشته ارز</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- box 4 -->
-            <div class="col">
-                <div class="card bg-light border-0 rounded-4 h-100">
-                    <div class="card-body d-flex flex-column">
-                        <img src="./assets/img/doge.png" alt="doge" class="me-2" width="32" height="32">
-                        <small class="text-secondary mt-2">
-                            <span class="fw-bold text-dark">دوج کوین</span> (Dogecoin)
-                        </small>
-                        <span class="fw-bold fs-4 mt-3 text-end">103,452,3$</span>
-                        <div class="d-flex justify-content-end align-items-center mt-3">
-                            <img src="./assets/img/arrow-elbowup.png" alt="arrow" width="24" height="24">
-                            <span class="bg-opacity-success  rounded-circle p-1 d-flex align-items-center ">3%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- box 5 -->
-            <div class="col">
-                <div class="card bg-light border-0 rounded-4 h-100">
-                    <div class="card-body d-flex flex-column">
-                            <img src="./assets/img/shiba.png" alt="shiba" class="me-2" width="32" height="32">
-                            <small class="text-secondary">
-                                <span class="fw-bold text-dark">شیبا</span> (SHIBA INU)
-                            </small>
-                        <span class="fw-bold fs-4 mt-3 text-end">103,452,3$</span>
-                        <div class="d-flex justify-content-end align-items-center mt-3">
-                            <img src="./assets/img/arrow-elbowup.png" alt="arrow" width="24" height="24">
-                            <span class="bg-opacity-success rounded-circle p-1 d-flex align-items-center">3%</span>
-                        </div>
-                        <div
-                            class="d-flex justify-sm-content-between flex-column flex-sm-row align-items-center mt-3 gap-1">
-                            <div class="bg-gary p-1 px-2 rounded box-up">
-                                <span>0.00001s</span>
-                                <i class="fas fa-caret-up"></i>
-                            </div>
-                            <div class="bg-gary p-1 px-2 rounded box-down">
-                                <span class="text-danger">0.00001s</span>
-                                <i class="fas fa-caret-down text-danger"></i>
+                                <p class="mt-3 small text-muted text-md-nowrap">🔹 نوسانات 24 ساعت گذشته ارز</p>
                             </div>
                         </div>
 
-                        <p class="mt-3 small text-muted text-md-nowrap">🔹 نوسانات 24 ساعت گذشته ارز</p>
+                    </div>
+
+                    <!-- box 4 -->
+                    <div class="col">
+                        <div class="card bg-light border-0 rounded-4 h-100">
+                            <div class="card-body d-flex flex-column">
+                                <img src="./assets/img/doge.png" alt="doge" class="me-2" width="32" height="32">
+                                <small class="text-secondary mt-2">
+                                    <span class="fw-bold text-dark">دوج کوین</span> (Dogecoin)
+                                </small>
+                                <span class="fw-bold fs-4 mt-3 text-end">103,452,3$</span>
+                                <div class="d-flex justify-content-end align-items-center mt-3">
+                                    <img src="./assets/img/arrow-elbowup.png" alt="arrow" width="24" height="24">
+                                    <div
+                                        class="bg-opacity-success  rounded-circle p-1 py-2 d-flex justify-content-center align-items-center">
+                                        <span>۳%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box 5 -->
+                    <div class="col">
+                        <div class="card bg-light border-0 rounded-4 h-100">
+                            <div class="card-body d-flex flex-column">
+                                <img src="./assets/img/shiba.png" alt="shiba" class="me-2" width="32" height="32">
+                                <small class="text-secondary mt-2">
+                                    <span class="fw-bold text-dark">شیبا</span> (SHIBA INU)
+                                </small>
+                                <span class="fw-bold fs-4 mt-3 text-end">103,452,3$</span>
+                                <div class="d-flex justify-content-end align-items-center mt-3">
+                                    <img src="./assets/img/arrow-elbowup.png" alt="arrow" width="24" height="24">
+                                    <div
+                                        class="bg-opacity-success  rounded-circle p-1 py-2 d-flex justify-content-center align-items-center">
+                                        <span>۳%</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex justify-sm-content-between flex-column flex-sm-row align-items-center mt-3 gap-1">
+                                    <div class="bg-gary p-1 px-2 rounded box-up">
+                                        <span>0.00001s</span>
+                                        <i class="fas fa-caret-up"></i>
+                                    </div>
+                                    <div class="bg-gary p-1 px-2 rounded box-down">
+                                        <span class="text-danger">0.00001s</span>
+                                        <i class="fas fa-caret-down text-danger"></i>
+                                    </div>
+                                </div>
+                                <p class="mt-3 small text-muted text-md-nowrap">🔹 نوسانات 24 ساعت گذشته ارز</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
+        </div>
+        <!----------------------------------------------------------------part-2---------------------------------------------------------------------------------------------->
+        <div class="bg-light d-flex flex-column align-items-center text-center p-4 gap-2 ">
+            <p class="fw-bold divider-top">چرا پارسی‌پی؟</p>
+            <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                                <!--box4-->
+                                <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
+                                    <img src="./assets/img/address.png" alt="adres" width="50" height="50">
+                                    <div class="d-flex flex-column gap-2 mt-1">
+                                        <span class="fw-bold text-start">آدرس اختصاصی</span>
+                                        <span class="text-start small">آدرس کیف پول ثابت، بدون محدودیت زمانی!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                                <!--box5-->
+                                <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
+                                    <img src="./assets/img/poshtibani.png" alt="poshtibani" width="50" height="50">
+                                    <div class="d-flex flex-column">
+                                        <span class="fw-bold text-start">پشتیبانی</span>
+                                        <span class="text-start">حتی در تعطیلات هم همراه شماییم!</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-3 d-none d-lg-block">
+                                <!--box3-->
+                                <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
+                                    <img src="./assets/img/karmozd.png" alt="karmozd" width="50" height="50">
+                                    <div class="d-flex flex-column gap-2 mt-1">
+                                        <span class="fw-bold text-start">بدون کارمزد</span>
+                                        <span class="text-start">کارمزد ما در معاملات شما صفر است!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                                <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
+                                    <img src="./assets/img/poshtibani.png" alt="poshtibani" width="50" height="50">
+                                    <div class="d-flex flex-column gap-2 mt-1">
+                                        <span class="fw-bold text-start">پشتیبانی</span>
+                                        <span class="text-start ">حتی در تعطیلات هم همراه شماییم!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                                <!--box2-->
+                                <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
+                                    <img src="./assets/img/karbary.png" alt="emoji" width="50" height="50">
+                                    <div class="d-flex flex-column gap-2 mt-1">
+                                        <span class="fw-bold text-start">کاربری ساده</span>
+                                        <span class="text-start">کنترل پنل ساده اما قدرتمند.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 mb-3 d-none d-lg-block">
+                                <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
+                                    <img src="./assets/img/tasvie.png" alt="tasvie" width="50" height="50">
+                                    <div class="d-flex flex-column gap-2 mt-1">
+                                        <span class=" fw-bold text-start">تسویه آنی</span>
+                                        <span class="text-start">تسویه آنی به حساب بانکی شما</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ناوبری -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
 
         </div>
-        <!----------------------------------------------------------------part-2-------------------------------------------------------------------------------------------------->
-        <p class="fw-bold text-start mt-5">می‌خوام ارز بخرم، از کجا شروع کنم؟</p>
+        <!----------------------------------------------------------------part-3-------------------------------------------------------------------------------------------------->
+        <div class="p-4 d-flex flex-column align-items-center">
+
+            <p class="fw-bold divider-top"> می‌خوام ارز بخرم، از کجا شروع کنم؟</p>
+        </div>
         <div class=" second-section border pt-3 px-3 ">
             <div class="row row-cols-1 row-cols-lg-3 g-4">
                 <div class="col steps border-lg-none border-lg-end">
@@ -226,24 +388,25 @@
                 </div>
             </div>
             <div class="text-center my-2">
-                <button id="btn-submit" class="btn btn-outline-danger rounded-4 w-25 small text-nowrap">تایید و ادامه</button>
+                <button id="btn-submit" class="btn btn-outline-danger rounded-4 w-25 small text-nowrap">تایید و
+                    ادامه</button>
             </div>
         </div>
-        <!----------------------------------------------------------------part-3------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------part-4------------------------------------------------------------------------------------------------->
         <div class="header-text d-flex flex-column align-items-center gap-3 mt-5">
             <p class="fw-bold text-center">تغییرات 24 ساعت اخیر حوزه ارز دیجیتال</p>
 
-            <div class="d-flex align-items-center justify-content-between  border rounded-5  w-50">
+            <div class="d-flex align-items-center justify-content-between  border rounded-5 mb-4">
                 <input type="text" name="inpamount-1" class="form-control bg-white border-0 rounded-5 small"
                     placeholder="همین الان اولین معامله خود را انجام دهید.">
 
-                <button type="button" class="btn btn-light d-flex align-items-center rounded-5  px-sm-3 px-2">
+                <button type="button" class="btn btn-outline-danger d-flex align-items-center rounded-5  px-sm-3 px-2">
                     <span class="text-nowrap me-2 d-none d-md-block">آغاز کنید</span>
                     <i class="fas fa-angle-left"></i>
                 </button>
             </div>
         </div>
-        <!----------------------------------------------------------------part-4-------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------part-5-------------------------------------------------------------------------------------------->
         <div class="row row-cols-lg-5 row-cols-md-3 row-cols-1 align-items-stretch">
             <div class="col mt-2">
                 <div class="card bg-light border-0 h-100">
@@ -475,12 +638,15 @@
             </div>
 
         </div>
-    </div>
+
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

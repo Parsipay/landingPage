@@ -120,11 +120,22 @@ body{font-family:"dana";font-size:13px;line-height:1;}
 --opacity-danger: #FBD7D9;
 --opacity-success:#D0F4E6;
 --opacity-warning: rgba(255, 207, 104, 0.356);
+--main-gary-element:#F8FAFD;
+
 }
 
 
+.font-color{
+  color: #616E85!important;
 
-
+}
+li{
+  font-size: 16px;
+  padding: 0px 10px;
+}
+.gary-color{
+  background-color: var(--main-gary-element)!important;
+}
 .amount{
        background-color: #f8f9fa
 }
@@ -178,20 +189,62 @@ body{font-family:"dana";font-size:13px;line-height:1;}
     
 }
 
-body {
-  background-image: url("../img/Group 26.png");
 
-}
-
-
+.outline-0{outline:0}
+.outline-0:focus{box-shadow:none}
 @media (max-width: 991px) {
     .steps {
         border-left: none !important;
         border-bottom: 1px solid var(--main-purple);
         margin-bottom: 15px!important;
     }
-  
-    .amount{
-      width: 298px!important;
-    }
 }
+.ps-7px{padding-inline-start:20px}
+.gap-24px{gap:0 7px}
+.min-w-103{min-width:103px}
+
+.divider-top{
+  position:relative;
+  padding-top:25px;
+}
+.divider-top:before{
+  content:"";
+  background-image:url("../img/divider.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top:0;
+  right:0;
+  width:60px;
+  height:14px;
+}
+
+.nav-link:focus,
+.nav-link:active {
+    text-decoration: underline;
+}
+  
+
+/*new style*/
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+.carousel-indicators {
+  margin-bottom: -2rem;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+
+  position: absolute;
+  top: -60px;
+}
+
+ .carousel-control-prev-icon {
+  filter: invert(30%) sepia(89%) saturate(700%) hue-rotate(210deg) brightness(95%) contrast(90%);
+}
+
+
+.carousel-control-next-icon {
+  filter: invert(39%) sepia(57%) saturate(500%) hue-rotate(80deg) brightness(90%) contrast(85%);
+}
+
+
