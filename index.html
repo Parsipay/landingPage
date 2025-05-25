@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-MdqCcafa5BLgxBDJ3d/4D292geNL64JyRtSGjEszRUQX9rhL1QkcnId+OT7Yw+D+" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -41,10 +42,9 @@
                         height="55"></a>
 
                 <!--offcanvas Button-->
-                <button class="btn btn-danger d-md-none" type="button" data-bs-toggle="offcanvas"
+                <button class="btn btn-outline-danger d-md-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar">
-                    منو
-                </button>
+                    <i class='fas fa-list'></i> </button>
 
                 <!--navbar-->
                 <div class="collapse navbar-collapse d-none d-md-block ">
@@ -73,7 +73,7 @@
                 <!-- Offcanvas-->
                 <div class="offcanvas offcanvas-start d-md-none" id="offcanvasNavbar">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">منو</h5>
+                        <h5 class="offcanvas-title"><i class='fas fa-list'></i></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -259,99 +259,74 @@
                 </div>
             </div>
         </div>
-        <!----------------------------------------------------------------part-2(carousel)----------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------part-2(why parsipay)----------------------------------------------------------------------------------------------------->
         <div class="bg-light d-flex flex-column align-items-center text-center p-4 gap-2">
             <p class="fw-bold divider-top">چرا پارسی‌پی؟</p>
-            <div class="container mt-5">
-                <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active">
-                            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3">
-                                <!--box-1-->
-                                <div class="col col-12">
-                                    <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
-                                        <img src="./assets/img/address.png" alt="adres" width="50" height="50">
-                                        <div class="d-flex flex-column gap-2 mt-1">
-                                            <span class="fw-bold text-start">آدرس اختصاصی</span>
-                                            <span class="text-start small">آدرس کیف پول ثابت، بدون محدودیت زمانی!</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--box-2-->
-                                <div class="col col-12">
-                                    <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
-                                        <img src="./assets/img/poshtibani.png" alt="poshtibani" width="50" height="50">
-                                        <div class="d-flex flex-column">
-                                            <span class="fw-bold text-start">پشتیبانی</span>
-                                            <span class="text-start">حتی در تعطیلات هم همراه شماییم!</span>
-                                        </div>
-                                    </div>
+            <div class="container">
 
-                                </div>
-                                <!--box-3-->
-                                <div class="col col-12">
-                                    <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
-                                        <img src="./assets/img/karmozd.png" alt="karmozd" width="50" height="50">
-                                        <div class="d-flex flex-column gap-2 mt-1">
-                                            <span class="fw-bold text-start">بدون کارمزد</span>
-                                            <span class="text-start">کارمزد ما در معاملات شما صفر است!</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="carousel-item">
-                            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3">
-                                <!--box-5-->
-                                <div class="col col-12">
-                                    <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
-                                        <img src="./assets/img/poshtibani.png" alt="poshtibani" width="50" height="50">
-                                        <div class="d-flex flex-column">
-                                            <span class="fw-bold text-start">پشتیبانی</span>
-                                            <span class="text-start">حتی در تعطیلات هم همراه شماییم!</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--box-6-->
-                                <div class="col col-12">
-                                    <!--box2-->
-                                    <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
-                                        <img src="./assets/img/karbary.png" alt="emoji" width="50" height="50">
-                                        <div class="d-flex flex-column gap-2 mt-1">
-                                            <span class="fw-bold text-start">کاربری ساده</span>
-                                            <span class="text-start">کنترل پنل ساده اما قدرتمند.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--box-7-->
-                                <div class="col col-12">
-                                    <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2">
-                                        <img src="./assets/img/tasvie.png" alt="tasvie" width="50" height="50">
-                                        <div class="d-flex flex-column gap-2 mt-1">
-                                            <span class=" fw-bold text-start">تسویه آنی</span>
-                                            <span class="text-start">تسویه آنی به حساب بانکی شما</span>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-6 align-items-stretch h-100">
+                    <!--box-1-->
+                    <div class="col d-flex mt-2">
+                        <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2 flex-fill">
+                            <img src="./assets/img/address.png" alt="adres" width="50" height="50">
+                            <div class="d-flex flex-column gap-2 mt-1">
+                                <span class="fw-bold text-start">آدرس اختصاصی</span>
+                                <span class="text-start small">آدرس کیف پول ثابت، بدون محدودیت زمانی!</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Buttons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+                    <!--box-2-->
+                    <div class="col d-flex  mt-2">
+                        <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2 flex-fill">
+                            <img src="./assets/img/poshtibani.png" alt="poshtibani" width="50" height="50">
+                            <div class="d-flex flex-column">
+                                <span class="fw-bold text-start">پشتیبانی</span>
+                                <span class="text-start">حتی در تعطیلات هم همراه شماییم!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--box-3-->
+                    <div class="col d-flex mt-2">
+                        <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2 flex-fill">
+                            <img src="./assets/img/karmozd.png" alt="karmozd" width="50" height="50">
+                            <div class="d-flex flex-column gap-2 mt-1">
+                                <span class="fw-bold text-start">بدون کارمزد</span>
+                                <span class="text-start">کارمزد ما در معاملات شما صفر است!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--box-4-->
+                    <div class="col d-flex mt-2">
+                        <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2 flex-fill">
+                            <img src="./assets/img/poshtibani.png" alt="poshtibani" width="50" height="50">
+                            <div class="d-flex flex-column">
+                                <span class="fw-bold text-start">پشتیبانی</span>
+                                <span class="text-start">حتی در تعطیلات هم همراه شماییم!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--box-5-->
+                    <div class="col d-flex mt-2">
+                        <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2 flex-fill">
+                            <img src="./assets/img/karbary.png" alt="emoji" width="50" height="50">
+                            <div class="d-flex flex-column gap-2 mt-1">
+                                <span class="fw-bold text-start">کاربری ساده</span>
+                                <span class="text-start">کنترل پنل ساده اما قدرتمند.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--box-6-->
+                    <div class="col d-flex mt-2 ">
+                        <div class="d-flex align-items-center bg-white border rounded-4 gap-2 p-2 flex-fill">
+                            <img src="./assets/img/tasvie.png" alt="tasvie" width="50" height="50">
+                            <div class="d-flex flex-column gap-2 mt-1">
+                                <span class=" fw-bold text-start">تسویه آنی</span>
+                                <span class="text-start">تسویه آنی به حساب بانکی شما</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
         <!----------------------------------------------------------------part-3(steps)-------------------------------------------------------------------------------------------------------->
         <div class="step-section">
@@ -694,17 +669,15 @@
                     <a href="#" class=" text-dark">دانلود نسخه مستقیم اندروید</a>
                 </div>
             </div>
-            <div class="position-absolute d-none d-md-block" style="left: -60px; bottom: 0;">
+            <div class="position-absolute d-none d-md-block" style="left: -60px; bottom: 15px;">
                 <img src="./assets/img/Mockup.png" alt="mobile" class="img-phone" style="height: 450px;">
             </div>
         </div>
-
         <!-------------------------------------------------------------part-6(answer-question)------------------------------------------------------------------------------------------------->
-
         <div class="d-flex flex-column align-items-center mt-5">
             <p class="fw-bold divider-top">پاسخ به سوالات متداول شما </p>
             <div class="container">
-            <div class="list-group">
+                <div class="list-group">
                     <!--question-1-->
                     <div class="row align-items-center g-2 py-3" data-bs-toggle="collapse" data-bs-target="#faq1"
                         role="button">
@@ -712,10 +685,11 @@
                             <strong class="border text-secondary px-2">1</strong>
                         </div>
                         <div class="col">
-                            <span>کسب درآمد از طریق پارسی‌پی چگونه است؟</span>
+                            <span class="fw-bold">کسب درآمد از طریق پارسی‌پی چگونه است؟</span>
                         </div>
                         <div class="col-auto">
                             <i class="fa-solid fa-plus text-secondary p-2 rounded"></i>
+                            <i class="fa fa-minus text-light bg-purple p-2 rounded d-none"></i>
                         </div>
                     </div>
                     <div id="faq1" class="collapse mt-2 text-secondary text-start">
@@ -728,10 +702,11 @@
                             <strong class="border text-secondary px-2">2</strong>
                         </div>
                         <div class="col">
-                            <span>از پارسی‌پی چطور وجه زمان سفارش رو دریافت می‌کنم؟</span>
+                            <span class="fw-bold">از پارسی‌پی چطور وجه زمان سفارش رو دریافت می‌کنم؟</span>
                         </div>
                         <div class="col-auto">
                             <i class="fa-solid fa-plus text-secondary p-2 rounded"></i>
+                            <i class="fa fa-minus text-light bg-purple p-2 rounded d-none"></i>
                         </div>
                     </div>
                     <div id="faq2" class="collapse mt-2 text-secondary text-start p-2">
@@ -744,40 +719,104 @@
                             <strong class="border text-secondary px-2">3</strong>
                         </div>
                         <div class="col">
-                            <span>کسب درآمد از طریق پارسی‌پی چگونه است؟ </span>
+                            <span class="fw-bold">کسب درآمد از طریق پارسی‌پی چگونه است؟ </span>
                         </div>
                         <div class="col-auto">
                             <i class="fa-solid fa-plus text-secondary p-2 rounded"></i>
+                            <i class="fa fa-minus text-light bg-purple p-2 rounded d-none"></i>
                         </div>
                     </div>
                     <div id="faq3" class="collapse mt-2 text-secondary text-start">
-                        پاسخ: مبلغ سفارش پس از تأیید در حساب پارسی‌پی شما قرار می‌گیرد.
-                    </div>
-                
-                <!--question-4-->
-            <div class="row align-items-center g-2 py-3" data-bs-toggle="collapse" data-bs-target="#faq4"
+                        کاربری گرامی، در صورت انجام خرید توسط کاربر معرفی شده، مبلغی به صورت پورسانت در ازای خرید مستقیم
+                        به موجودی کیف پول پارسی‌پی شخص معرف اضافه خواهد شد. </div>
+
+                    <!--question-4-->
+                    <div class="row align-items-center g-2 py-3" data-bs-toggle="collapse" data-bs-target="#faq4"
                         role="button">
                         <div class="col-auto">
                             <strong class="border text-secondary px-2">4</strong>
                         </div>
                         <div class="col">
-                            <span>کسب درآمد از طریق پارسی‌پی چگونه است؟ </span>
+                            <span class="fw-bold">از پارسی‌پی خرید کنم، چه زمانی سفارش رو دریافت می‌کنم؟</span>
                         </div>
                         <div class="col-auto">
                             <i class="fa-solid fa-plus text-secondary p-2 rounded"></i>
+                            <i class="fa fa-minus text-light bg-purple p-2 rounded d-none"></i>
                         </div>
                     </div>
                     <div id="faq4" class="collapse mt-2 text-secondary text-start">
-                        پاسخ: مبلغ سفارش پس از تأیید در حساب پارسی‌پی شما قرار می‌گیرد.
-                    </div>
-                
+                        بلافاصله بعد از اتمام عملیات پرداخت، انتقال رمزارز شما انجام میشود و جزئیات انتقال از طریق قسمت
+                        سفارشات حساب کاربری پارسی‌پی شما قابل مشاهده می باشد. </div>
                 </div>
-            
+            </div>
+        </div>
+    </main>
+    <!--------------------------------------------------------------------end-main------------------------------------------------------------------------------------------>
+    <!--------------------------------------------------------------------footer----------------------------------------------------------------------------------------------->
+    <footer class="bg-footer text-light pt-5 pb-3 px-4m mt-3">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center text-lg-start align-items-start g-4">
+                <!-- Column 1 -->
+                <div class="col d-flex flex-column align-items-center align-items-lg-start">
+                    <h6 class="fw-bold">دانلود مستقیم اپلیکیشن</h6>
+                    <img src="assets/img/qr.png" width="100" height="100" class="my-3" alt="QR">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fa-brands fa-apple fs-1"></i>
+                        <i class="fa-brands fa-google-play fs-2"></i>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col d-flex flex-column align-items-center align-items-lg-start text-light">
+                    <h5 class="fw-bold">پارسی پی</h5>
+                    <p class="fw-bold lh-lg small text-justify border-bottom py-3">
+                        با بیش از 8 سال پیشینه مثبت در زمینه خرید و فروش ارزهای دیجیتال به صورت آنلاین و تحویل آنی به
+                        مشتریان خود خدمت رسانی کرده است.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-2">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col d-flex flex-column align-items-center align-items-lg-start text-light">
+                    <h6 class="fw-bold mb-3">راهنمای استفاده</h6>
+                    <a href="#" class="text-light text-decoration-none fw-bold mb-3">نحوه‌ی ثبت نام</a>
+                    <a href="#" class="text-light text-decoration-none fw-bold mb-3">نحوه‌ی احراز هویت</a>
+                    <a href="#" class="text-light text-decoration-none fw-bold mb-3">نحوه‌ی خرید و فروش</a>
+                    <a href="#" class="text-light text-decoration-none fw-bold mb-3">کارمزد</a>
+                    <a href="#" class="text-light text-decoration-none fw-bold">قوانین و مقررات</a>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col d-flex flex-column align-items-center align-items-lg-start">
+                    <h6 class="fw-bold mb-3">خدمات پارسی‌پی</h6>
+                    <a href="#" class="text-light text-decoration-none fw-bold mb-3">خرید و فروش ارز دیجیتال</a>
+                    <a href="#" class="text-light text-decoration-none fw-bold mb-3">دعوت از دوستان</a>
+                    <a href="#" class="text-light text-decoration-none fw-bold mb-3">دانلود اپلیکیشن</a>
+                    <a href="#" class="text-light text-decoration-none fw-bold">کسب درآمد از پارسی‌پی</a>
+                </div>
+            </div>
+        </div>
+        <!-- Divider -->
+        <div class=" d-flex justify-content-center align-items-center text-light gap-5 mt-3">
+            <img src="./assets/img/logohorizintal.png" alt="logo" class="d-sm-block d-none">
+            <div class="d-flex flex-column align-items-end gap-2">
+                <div><span class="me-2 fw-bold">فردوس شرق، ساختمان ماندگار</span><i
+                        class="fa-solid fa-location-dot"></i></div>
+                <div><span class="me-2  fw-bold">021-44349239</span><i class="fa-solid fa-phone"></i></div>
+            </div>
         </div>
 
+        <!-- Copyright -->
+        <div class="text-center mt-3 text-light fw-bold">
+            2023 | نوین آدا تجارت سارویه| تمامی حقوق محفوظ می‌باشد.
+        </div>
+    </footer>
 
 
-    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>

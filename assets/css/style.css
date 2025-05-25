@@ -186,12 +186,17 @@ li {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: var(--main-purple);
 }
-
+.bg-footer{
+  background-color: #0D1421;
+}
 .outline-0 {
   outline: 0;
 }
 .outline-0:focus {
   box-shadow: none;
+}
+.bg-purple{
+  background-color: var(--main-purple);
 }
 @media (max-width: 991px) {
   .steps {
@@ -209,7 +214,9 @@ li {
 .min-w-103 {
   min-width: 103px;
 }
-
+.justify{
+  text-align: justify;
+}
 .divider-top {
   position: relative;
   padding-top: 25px;
@@ -267,4 +274,8 @@ li {
 .fa-solid:active{
 background-color: #ab4f9e;
 color: white!important;
+}
+
+.fa-solid:active .fafa-minus-square{
+  display: block !important;
 }
