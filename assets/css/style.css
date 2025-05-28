@@ -112,6 +112,9 @@ body {
   font-family: "dana";
   font-size: 13px;
   line-height: 1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -128,6 +131,9 @@ body {
 
 .font-color {
   color: #616e85 !important;
+}
+.text-gray {
+  color: #dee4ec !important;
 }
 li {
   font-size: 16px;
@@ -153,6 +159,12 @@ li {
 
 .bg-gary {
   background-color: var(--second-gray) !important;
+}
+.bg-green {
+  color: var(--main-success);
+}
+.bg-red {
+  color: var(--main-danger);
 }
 .box-up {
   color: var(--main-success);
@@ -186,8 +198,8 @@ li {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: var(--main-purple);
 }
-.bg-footer{
-  background-color: #0D1421;
+.bg-footer {
+  background-color: #0d1421;
 }
 .outline-0 {
   outline: 0;
@@ -195,7 +207,7 @@ li {
 .outline-0:focus {
   box-shadow: none;
 }
-.bg-purple{
+.bg-purple {
   background-color: var(--main-purple);
 }
 @media (max-width: 991px) {
@@ -205,6 +217,20 @@ li {
     margin-bottom: 15px !important;
   }
 }
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .imagephone {
+    position: static !important;
+    margin: 0 auto;
+    text-align: center;
+    display: block !important;
+    width: 100%;
+  }
+  .img-phone {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
 .ps-7px {
   padding-inline-start: 20px;
 }
@@ -214,7 +240,7 @@ li {
 .min-w-103 {
   min-width: 103px;
 }
-.justify{
+.justify {
   text-align: justify;
 }
 .divider-top {
@@ -263,19 +289,83 @@ li {
   background: url("../img/Group\ 26.png");
 }
 
-
-
-.download-section{
+.download-section {
   background: url("../img/logo2.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
-.fa-solid:active{
-background-color: #ab4f9e;
-color: white!important;
+.fa-solid:active {
+  background-color: #ab4f9e;
+  color: white !important;
 }
 
-.fa-solid:active .fafa-minus-square{
+.fa-solid:active .fafa-minus-square {
   display: block !important;
+}
+
+.selectitem:hover {
+  background-color: #cacccf;
+  color: white !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto;              
+  bottom: 5px;               
+  transform: translateY(0);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 25px;       /* عرض دکمه */
+  height: 25px;      /* ارتفاع دکمه */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px !important;  /* اندازه آیکن */
+}
+
+
+.accordion-button {
+  background-color: white !important;
+  color: #6c757d;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover,
+.accordion-button:focus,
+.accordion-button:active {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.accordion-button::after {
+  content: "+";
+  font-size: 20px;
+  transition:
+    content 0.3s ease,
+    background-color 0.3s ease;
+  background-image: none !important;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+  content: "-";
+  background-color: purple;
+  color: white;
+}
+input:not(:placeholder-shown)::placeholder {
+  opacity: 0!important;
+  transition: opacity 0.2s ease-in-out!important;
+}
+.custom-input::placeholder {
+  color: #999;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.custom-input:focus::placeholder,
+.custom-input:not(:placeholder-shown)::placeholder {
+  opacity: 0;
 }
