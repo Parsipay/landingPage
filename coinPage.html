@@ -47,20 +47,21 @@
 
                 <!--navbar-->
                 <div class="collapse navbar-collapse d-none d-md-block ">
-                    <ul class="navbar-nav me-auto mb-lg-0 ">
+                    <ul class="navbar-nav me-auto mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#">خانه</a>
+                            <a class="nav-link fw-bold add-small-on-md" href="#">خانه</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#">قیمت ارز دیجیتال</a>
+                            <a class="nav-link fw-bold add-small-on-md" href="#">قیمت ارز دیجیتال</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#">اخبار و مقالات</a>
+                            <a class="nav-link fw-bold add-small-on-md" href="#">اخبار و مقالات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#">راهنما</a>
+                            <a class="nav-link fw-bold add-small-on-md" href="#">راهنما</a>
                         </li>
                     </ul>
+
                     <div class="d-flex align-items-center flex-nowrap gap-24px">
                         <a href="#" class="btn btn-outline-danger rounded-5 min-w-103">ورود</a>
                         <a href="#" class="btn btn-outline-danger rounded-5 min-w-103 me-1">ثبت‌نام</a>
@@ -77,17 +78,17 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-dark" href="#">خانه</a>
+                            <li class="nav-item  add-small-on-md">
+                                <a class="nav-link active text-dark add-small-on-md" href="#">خانه</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">قیمت ارز دیجیتال</a>
+                            <li class="nav-item  add-small-on-md">
+                                <a class="nav-link add-small-on-md " href="#">قیمت ارز دیجیتال</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">اخبار و مقالات</a>
+                            <li class="nav-item  add-small-on-md">
+                                <a class="nav-link add-small-on-md" href="#">اخبار و مقالات</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">راهنما</a>
+                            <li class="nav-item  add-small-on-md">
+                                <a class="nav-link add-small-on-md" href="#">راهنما</a>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center gap-2">
@@ -104,41 +105,43 @@
     </header>
     <!--------------------------------------------------------------------------breadcrumb------------------------------------------------------------------------------------->
     <div class="container">
-        <div class="d-flex align-items-center mt-5">
+        <div class="d-flex align-items-center mt-5 flex-wrap flex-sm-nowrap">
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb" class="me-2">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item">
-                        <a href="#" class="text-dark text-decoration-none">پارسی‌پی</a>
+                    <li class="breadcrumb-item add-small-on-sm">
+                        <a href="#" class="text-dark text-decoration-none  ">پارسی‌پی</a>
                     </li>
-                    <li class="breadcrumb-item">
-                        <a href="#" class="text-dark text-decoration-none">خرید ارزهای دیجیتال</a>
+                    <li class="breadcrumb-item  add-small-on-sm">
+                        <a href="#" class="text-dark text-decoration-none ">خرید ارزهای دیجیتال</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">خرید بیت‌کوین</li>
+                    <li class="breadcrumb-item active add-small-on-sm" aria-current="page">خرید بیت‌کوین</li>
                 </ol>
             </nav>
 
             <!-- Line that fills remaining space -->
             <div class="flex-grow-1">
-                <hr class="mt-1 mb-0">
+                <hr class="mt-1 mb-0 d-none d-md-block">
             </div>
         </div>
+
         <!----------------------------------------------------------------part1---------------------------------------------------------------------->
         <div class="d-flex felx-wrap justify-content-start align-items-center gap-3 mt-4 py-2  ">
-            <img src="./assets/img/btc1.png" alt="btc" width="50" height="50">
-            <span class="fs-sm-2 mb-0 fw-bold text-md-nowrap">خرید و فروش بیت‌کوین (BTC) با کارمزد صفر</span>
-            <div class="text-nowrap d-flex align-items-center ms-5">
-                <span class="text-secondary ">رتبه در مارکت</span>
-                <span class="fw-bold ms-1">#1</span>
+            <img src="./assets/img/btc1.png" alt="btc" width="50" height="50" class="btc-image">
+            <span class="fs-sm-2 mb-0 fw-bold text-wrap add-x-small-on-sm">خرید و فروش بیت‌کوین (BTC) با کارمزد
+                صفر</span>
+            <div class=" d-flex align-items-center ms-5">
+                <span class="text-secondary add-x-small-on-sm  ">رتبه در مارکت</span>
+                <span class="fw-bold ms-1 add-x-small-on-sm">#1</span>
             </div>
         </div>
     </div>
-    <!----------------------------------------------------------------------main------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------main------------------------------------------------------------------------------------------->
     <main>
         <div class="container">
             <div class="row">
                 <!--content-->
-                <div class="col-md-8 col-12 p-3 order-2 order-sm-1">
+                <div class="col-md-7 col-12 p-3 order-2 order-md-1">
                     <div class="d-flex flex-column">
                         <!--part2-->
                         <p class="py-3 lh-lg justify border-top font-color">امکان خرید بیت‌کوین با قیمت لحظه‌ای، بدون
@@ -146,35 +149,37 @@
                             طریق صرافی
                             امن پارسی‌پی فراهم می‌باشد. این امکان بلافاصله بعد از اتمام مراحل ثبت‌نام، به صورت 24 ساعته،
                             همراه با پشتیبانی در تمام مراحل فعال می‌شود.</p>
-                        <!--part3-div3-->
+                        <!-----------------------------------------------part3-div3 highest and lowest price--------------------------------->
                         <div
-                            class="bg-light d-flex flex-wrap align-items-center justify-content-md-between p-2 rounded">
-                            <!--The lowest price-->
-                            <div
-                                class="d-flex flex-column flex-md-row align-items-md-center  justify-content-between pe-md-3 mb-3 mb-md-0">
-                                <div class="d-flex align-items-center mb-2 mb-md-0">
-                                    <span class="bg-red fw-bold fs-3 mt-1 me-1">•</span>
-                                    <span class="text-secondary">کمترین قیمت 24 ساعته:</span>
+                            class="bg-light d-flex justify-content-between align-items-center gap-3 gap-sm-2  p-2 rounded">
+                            <!-- The lowest price -->
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <span class="bg-red fw-bold fs-3 mt-1 me-1 add-small-on-md">•</span>
+                                    <span class="text-secondary add-x-small-on-md fw-bold lh-sm">کمترین قیمت 24
+                                        ساعته:</span>
                                 </div>
-                                <div class="d-flex flex-column text-end ps-md-3">
-                                    <span class="bg-red fw-bold">USD 104,779</span>
-                                    <span class="bg-red fw-bold small">۹,۱۰۹,۵۲۹,۱۰۰ تومان</span>
+                                <div class="d-flex flex-column text-end ms-md-5">
+                                    <span class="bg-red fw-bold add-x-small-on-md">USD 104,779</span>
+                                    <span class="bg-red fw-bold small add-x-small-on-md mt-2">۹,۱۰۹,۵۲۹,۱۰۰ تومان</span>
                                 </div>
                             </div>
                             <div class="text-gray d-lg-block d-none">|</div>
-                            <!--The highest price-->
-                            <div class="d-flex flex-column flex-md-row align-items-md-center">
-                                <div class="d-flex align-items-center mb-2 mb-md-0">
-                                    <span class="bg-green fw-bold fs-3 mt-1 me-1">•</span>
-                                    <span class="text-secondary">بیشترین قیمت 24 ساعته:</span>
+                            <!-- The highest price -->
+                            <div class="d-flex  align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <span class="bg-green fw-bold fs-3 mt-1 me-1 add-small-on-md">•</span>
+                                    <span class="text-secondary add-x-small-on-md fw-bold lh-sm">بیشترین قیمت 24
+                                        ساعته:</span>
                                 </div>
-                                <div class="d-flex flex-column text-end ps-md-3">
-                                    <span class="bg-green fw-bold">USD 103,129</span>
-                                    <span class="bg-green fw-bold small">۸,۸۴۳,۱۶۸,۶۰۰ تومان</span>
+                                <div class="d-flex flex-column text-end ms-md-5">
+                                    <span class="bg-green fw-bold add-x-small-on-md">USD 103,129</span>
+                                    <span class="bg-green fw-bold small add-x-small-on-md lh-sm mt-2">۸,۸۴۳,۱۶۸,۶۰۰
+                                        تومان</span>
                                 </div>
                             </div>
                         </div>
-                        <!--part-4 chart-->
+                        <!------------------------------------------------------part-4 chart-trading-view---------------------------------------->
                         <div class=" mt-5">
                             <!-- TradingView Widget BEGIN -->
                             <div class="tradingview-widget-container" style="height:500px;width:100%">
@@ -190,44 +195,58 @@
                             </div>
                             <!-- TradingView Widget END -->
                         </div>
-                        <!---------------------------------------------------analyze market------------------------------------------------------------>
-                        <div class="mt-3"><img src="./assets/img/status-up.png" alt="tahlil" width="50" height="50">
-                            <span class="fw-bold text-secondary ms-3">تحلیل تکنیکال بازار بیت‌کوین</span>
+                        <!---------------------------------------------------part-5-analyze market------------------------------------------------------------>
+                        <div>
+                            <div class="mt-3"><img src="./assets/img/status-up.png" alt="tahlil" width="50" height="50">
+                                <span class="fw-bold text-secondary ms-3">تحلیل تکنیکال بازار بیت‌کوین</span>
+                            </div>
+                            <div class="bg-light p-4 lh-lg justify font-color rounded mt-3">
+                                از نمودار تحلیل تکنیکال، تغییرات قیمت، حجم معاملات و سایر داده های مرتبط با کوین، در یک
+                                بازه‌ی زمانی مشخص و بر اساس بازار جهانی با استناد به محبوب‌ترین شاخص‌های تکنیکال برای
+                                پیش‌بینی روند آینده‌ی قیمت استفاده می‌شود.
+                            </div>
                         </div>
-                        <div class="bg-light p-4 lh-lg justify font-color rounded mt-3">
-                            از نمودار تحلیل تکنیکال، تغییرات قیمت، حجم معاملات و سایر داده های مرتبط با کوین، در یک
-                            بازه‌ی زمانی مشخص و بر اساس بازار جهانی با استناد به محبوب‌ترین شاخص‌های تکنیکال برای
-                            پیش‌بینی روند آینده‌ی قیمت استفاده می‌شود.
-                        </div>
-                        <!-----------------------------------------------------------------analyze and chart------------------------------------------------------------------------------------------->
-                        <div class="row mt-4">
-                            <!--rightside -->
-                            <div class="col-md-3 col-12 bg-light d-flex flex-column justify-content-start py-2">
-                                <nav class="navbar-nav w-100">
-                                    <ul class="nav flex-column text-center ">
-                                        <li class="nav-item"><a href="#"
-                                                class="nav-link text-secondary selectitem text-decoration-none text-nowrap">24
-                                                ساعت</a></li>
-                                        <li class="nav-item"><a href="#"
-                                                class="nav-link text-secondary selectitem text-decoration-none mt-4 text-nowrap">یک
-                                                هفته</a></li>
-                                        <li class="nav-item"><a href="#"
-                                                class="nav-link text-secondary selectitem text-decoration-none mt-4 text-nowrap">یک
-                                                ماه</a></li>
-                                        <li class="nav-item"><a href="#"
-                                                class="nav-link text-secondary selectitem text-decoration-none mt-4 text-nowrap">یک
-                                                سال</a></li>
+                        <!-----------------------------------------------------------------part-6-analyze and chart------------------------------------------------------------------------------------------->
+                        <div class="d-flex flex-column flex-md-row mt-4">
+                            <!-- Sidebar (right on RTL) -->
+                            <div class="bg-light d-flex flex-column justify-content-start pt-5 col-12 col-md-3"
+                                style="height:420px">
+                                <nav class="navbar-nav w-100 pt-3">
+                                    <ul class="nav flex-column text-center">
+                                        <li class="nav-item">
+                                            <a href="#"
+                                                class="nav-link text-secondary selectitem text-decoration-none text-nowrap fw-bold">24
+                                                ساعت</a>
+                                        </li>
+                                        <li class="nav-item mt-4">
+                                            <a href="#"
+                                                class="nav-link text-secondary selectitem text-decoration-none text-nowrap fw-bold">یک
+                                                هفته</a>
+                                        </li>
+                                        <li class="nav-item mt-4">
+                                            <a href="#"
+                                                class="nav-link text-secondary selectitem text-decoration-none text-nowrap fw-bold">یک
+                                                ماه</a>
+                                        </li>
+                                        <li class="nav-item mt-4">
+                                            <a href="#"
+                                                class="nav-link text-secondary selectitem text-decoration-none text-nowrap fw-bold">یک
+                                                سال</a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
-                            <!-- leftside-->
-                            <div class="col-md-9 col-12 ">
+
+                            <!-- Main content -->
+                            <div class="col-12 col-md-9">
                                 <!-- TradingView Widget BEGIN -->
-                                <div class="tradingview-widget-container w-100 ">
+                                <div class="tradingview-widget-container w-100">
                                     <div class="tradingview-widget-container__widget"></div>
-                                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
-                                            rel="noopener nofollow" target="_blank"><span class="blue-text">Track all
-                                                markets on TradingView</span></a></div>
+                                    <div class="tradingview-widget-copyright">
+                                        <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+                                            <span class="blue-text">Track all markets on TradingView</span>
+                                        </a>
+                                    </div>
                                     <script type="text/javascript"
                                         src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
                                         async>
@@ -236,7 +255,8 @@
                                 <!-- TradingView Widget END -->
                             </div>
                         </div>
-                        <!----------------------------------------------------------------favortit currenncy slider---------------------------------------------------------------------------->
+
+                        <!----------------------------------------------------------------part-7-favortit currenncy slider---------------------------------------------------------------------------->
                         <div class="mt-5">
                             <div class="d-flex align-items-center pb-4">
                                 <img src="./assets/img/ranking.png" alt="ranking" width="50" height="50">
@@ -408,14 +428,13 @@
                                 <div class="swiper-button-next"></div>
                             </div>
                         </div>
-                        <!----------------------------------------------------------------answer and question--------------------------------------------------------------------------------------------->
+                        <!----------------------------------------------------------------part-8-answer and question--------------------------------------------------------------------------------------------->
                         <div class="mt-5 p-0 d-flex flex-column ">
                             <div class="d-flex align-items-center">
                                 <img src="./assets/img/messages-2.png" alt="message" width="40" height="40">
                                 <span class="fw-bold ms-2 ">سوالات متدوال خرید بیت‌کوین</span>
                             </div>
                             <div class="accordion  mt-3" id="faqAccordion">
-
                                 <!-- FAQ 1 -->
                                 <div class="accordion-item border-0">
                                     <h2 class="accordion-header" id="heading1">
@@ -423,7 +442,8 @@
                                             type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
                                             aria-expanded="false" aria-controls="faq1">
                                             <span class="border text-secondary fw-bold px-2 pt-1 me-2">1</span>
-                                            <span class="fw-bold text-secondary">کسب درآمد از طریق پارسی‌پی چگونه
+                                            <span class="fw-bold text-secondary add-small-on-sm text-wrap">کسب درآمد از
+                                                طریق پارسی‌پی چگونه
                                                 است؟</span>
                                             <i class="bi bi-plus custom-icon"></i>
                                         </button>
@@ -436,7 +456,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <!-- FAQ 2 -->
                                 <div class="accordion-item border-0">
                                     <h2 class="accordion-header" id="heading2">
@@ -444,7 +463,8 @@
                                             type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
                                             aria-expanded="false" aria-controls="faq2">
                                             <span class="border px-2 pt-1 me-2 text-secondary fw-bold">2</span>
-                                            <span class="fw-bold text-secondary"> از پارسی‌پی چطور وجه زمان سفارش رو
+                                            <span class="fw-bold text-secondary add-small-on-sm text-wrap"> از پارسی‌پی
+                                                چطور وجه زمان سفارش رو
                                                 دریافت می‌کنم؟</span>
                                         </button>
                                     </h2>
@@ -463,7 +483,8 @@
                                             type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
                                             aria-expanded="false" aria-controls="faq3">
                                             <span class="px-2 pt-1 border text-secondary me-2 fw-bold">3</span>
-                                            <span class="fw-bold text-secondary"> کسب درآمد از طریق پارسی‌پی چگونه
+                                            <span class="fw-bold text-secondary add-small-on-sm text-wrap"> کسب درآمد از
+                                                طریق پارسی‌پی چگونه
                                                 است؟</span>
                                         </button>
                                     </h2>
@@ -485,7 +506,8 @@
                                             type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
                                             aria-expanded="false" aria-controls="faq4">
                                             <span class="px-2 pt-1 text-secondary fw-bold border me-2">4</span>
-                                            <span class="fw-bold text-secondary"> از پارسی‌پی خرید کنم، چه زمانی
+                                            <span class="fw-bold text-secondary add-small-on-sm text-wrap"> از پارسی‌پی
+                                                خرید کنم، چه زمانی
                                                 سفارش رو دریافت می‌کنم؟</span>
                                         </button>
                                     </h2>
@@ -504,7 +526,7 @@
                     </div>
                 </div>
                 <!--sidebar-->
-                <div class="col-md-4 col-12 order-1 order-sm-2">
+                <div class="col-md-5 col-12 order-1 order-md-1">
                     <div class="d-flex flex-column p-3 border sticky-top mt-3">
                         <div class="d-flex align-items-center gap-2 border-bottom py-3"><img src="./assets/img/btc1.png"
                                 alt="btc" width="30" height="30"><span class="fw-bold">محاسبه‌گر بیت‌کوین (BTC)</span>
@@ -512,9 +534,11 @@
                         <div class=" d-flex  flex-column text-md-nowrap text-md-wrap py-4 p-2 mt-3">
                             <div class="d-flex justify-content-between  align-items-center mt-3">
                                 <div><span class="bg-green fw-bold fs-6 mt-3 me-1">•</span>
-                                    <span class="text-secondary fw-bold small">قیمت لحظه‌ای خرید:</span>
+                                    <span class="text-secondary fw-bold small add-x-small-on-md">قیمت لحظه‌ای
+                                        خرید:</span>
                                 </div>
-                                <div class="mt-sm-1 small fw-bold"><span>۸,۷۹۰,۷۲۵,۵۰۰ (تومان)</span></div>
+                                <div class="mt-sm-1 small fw-bold add-x-small-on-md"><span>۸,۷۹۰,۷۲۵,۵۰۰ (تومان)</span>
+                                </div>
                             </div>
                             <div class="d-flex justify-content-between  align-items-center mt-3">
                                 <div><span class="bg-red fw-bold fs-6 mt-3 me-1">•</span>
@@ -550,21 +574,16 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
-    <!--------------------------------------------------------------------end-main------------------------------------------------------------------------------------------>
+    <!----------------------------------------------------------------end-main------------------------------------------------------------------------------------------>
     <!---------------------------------------------------------------news cards------------------------------------------------------------------>
-    
-    
-    
-    <div class="container-fluid order-3">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-4">
-    
-        <div class="col">
-            <div class="card bg-light border-0">
-                <div class="card-body">
-                    <h5 class="card-title">
+
+    <div class="container-fluid oredr-2 order-sm-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-4">
+            <div class="col">
+                <div class="card bg-light border-0">
+                    <div class="card-body">
                         <h5 class="card-title">
                             <div class="bg-gary p-5 rounded position-relative" style="height: 150px;">
                                 <span class="text-light bg-primary small p-1 rounded"
@@ -574,91 +593,90 @@
                             </div>
                         </h5>
                         <span class="fw-bold"> بیت‌کوین چیست؟ </span>
-                    </h5>
-                    <p class="card-text lh-sm">ارز دیجیتال بیت‌کوین با نماد BTC در سال ۲۰۰۹ توسط ساتوشی ناکاموتو
-                        ایجاد شد. بیت‌کوین یک شبکه غیرمتمرکز است و با استفاده از فناوری بلاک‌چین کار می‌کند.</p>
-                           <div class="d-flex justify-content-between align-items-center">
-                            <span class="today-date"></span>
-                            <a href="#" class="text-decoration-none">بیشتر...</a>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card bg-light border-0">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <h5 class="card-title">
-                            <div class="bg-gary p-5 rounded position-relative" style="height: 150px;">
-                                <span class="text-light bg-primary small p-1 rounded"
-                                    style="position: absolute; bottom: 0; right: 0; margin: 10px;">
-                                    اخبار ارز دیجیتال
-                                </span>
-                            </div>
-                        </h5>
-                        <span class="fw-bold"> بیت‌کوین چیست؟ </span>
-                    </h5>
-                    <p class="card-text lh-sm">ارز دیجیتال بیت‌کوین با نماد BTC در سال ۲۰۰۹ توسط ساتوشی ناکاموتو
-                        ایجاد شد. بیت‌کوین یک شبکه غیرمتمرکز است و با استفاده از فناوری بلاک‌چین کار می‌کند.</p>
-                           <div class="d-flex justify-content-between align-items-center">
-                            <span class="today-date"></span>
-                            <a href="#" class="text-decoration-none">بیشتر...</a>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card bg-light border-0">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <h5 class="card-title">
-                            <div class="bg-gary p-5 rounded position-relative" style="height: 150px;">
-                                <span class="text-light bg-primary small p-1 rounded"
-                                    style="position: absolute; bottom: 0; right: 0; margin: 10px;">
-                                    اخبار ارز دیجیتال
-                                </span>
-                            </div>
-                        </h5>
-                        <span class="fw-bold"> بیت‌کوین چیست؟ </span>
-                    </h5>
-                    <p class="card-text lh-sm">ارز دیجیتال بیت‌کوین با نماد BTC در سال ۲۰۰۹ توسط ساتوشی ناکاموتو
-                        ایجاد شد. بیت‌کوین یک شبکه غیرمتمرکز است و با استفاده از فناوری بلاک‌چین کار می‌کند.</p>
+                        <p class="card-text lh-sm">ارز دیجیتال بیت‌کوین با نماد BTC در سال ۲۰۰۹ توسط ساتوشی ناکاموتو
+                            ایجاد شد. بیت‌کوین یک شبکه غیرمتمرکز است و با استفاده از فناوری بلاک‌چین کار می‌کند.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="today-date"></span>
                             <a href="#" class="text-decoration-none">بیشتر...</a>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card bg-light border-0">
-                <div class="card-body">
-                    <h5 class="card-title">
+            <div class="col">
+                <div class="card bg-light border-0">
+                    <div class="card-body">
                         <h5 class="card-title">
-                            <div class="bg-gary p-5 rounded position-relative" style="height: 150px;">
-                                <span class="text-light bg-primary small p-1 rounded"
-                                    style="position: absolute; bottom: 0; right: 0; margin: 10px;">
-                                    اخبار ارز دیجیتال
-                                </span>
-                            </div>
+                            <h5 class="card-title">
+                                <div class="bg-gary p-5 rounded position-relative" style="height: 150px;">
+                                    <span class="text-light bg-primary small p-1 rounded"
+                                        style="position: absolute; bottom: 0; right: 0; margin: 10px;">
+                                        اخبار ارز دیجیتال
+                                    </span>
+                                </div>
+                            </h5>
+                            <span class="fw-bold"> بیت‌کوین چیست؟ </span>
                         </h5>
-                        <span class="fw-bold"> بیت‌کوین چیست؟ </span>
-                    </h5>
-                    <p class="card-text lh-sm">ارز دیجیتال بیت‌کوین با نماد BTC در سال ۲۰۰۹ توسط ساتوشی ناکاموتو
-                        ایجاد شد. بیت‌کوین یک شبکه غیرمتمرکز است و با استفاده از فناوری بلاک‌چین کار می‌کند.</p>
+                        <p class="card-text lh-sm">ارز دیجیتال بیت‌کوین با نماد BTC در سال ۲۰۰۹ توسط ساتوشی ناکاموتو
+                            ایجاد شد. بیت‌کوین یک شبکه غیرمتمرکز است و با استفاده از فناوری بلاک‌چین کار می‌کند.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="today-date"></span>
                             <a href="#" class="text-decoration-none">بیشتر...</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h5 class="card-title">
+                                <div class="bg-gary p-5 rounded position-relative" style="height: 150px;">
+                                    <span class="text-light bg-primary small p-1 rounded"
+                                        style="position: absolute; bottom: 0; right: 0; margin: 10px;">
+                                        اخبار ارز دیجیتال
+                                    </span>
+                                </div>
+                            </h5>
+                            <span class="fw-bold"> بیت‌کوین چیست؟ </span>
+                        </h5>
+                        <p class="card-text lh-sm">ارز دیجیتال بیت‌کوین با نماد BTC در سال ۲۰۰۹ توسط ساتوشی ناکاموتو
+                            ایجاد شد. بیت‌کوین یک شبکه غیرمتمرکز است و با استفاده از فناوری بلاک‌چین کار می‌کند.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="today-date"></span>
+                            <a href="#" class="text-decoration-none">بیشتر...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h5 class="card-title">
+                                <div class="bg-gary p-5 rounded position-relative" style="height: 150px;">
+                                    <span class="text-light bg-primary small p-1 rounded"
+                                        style="position: absolute; bottom: 0; right: 0; margin: 10px;">
+                                        اخبار ارز دیجیتال
+                                    </span>
+                                </div>
+                            </h5>
+                            <span class="fw-bold"> بیت‌کوین چیست؟ </span>
+                        </h5>
+                        <p class="card-text lh-sm">ارز دیجیتال بیت‌کوین با نماد BTC در سال ۲۰۰۹ توسط ساتوشی ناکاموتو
+                            ایجاد شد. بیت‌کوین یک شبکه غیرمتمرکز است و با استفاده از فناوری بلاک‌چین کار می‌کند.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="today-date"></span>
+                            <a href="#" class="text-decoration-none">بیشتر...</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <!--------------------------------------------------------------------footer----------------------------------------------------------------------------------------------->
-    <footer class="bg-footer text-light pt-5 pb-3 px-4 mt-3" id="footer">
+    <footer class="bg-footer text-light pt-5 pb-3 mt-3" id="footer">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center text-lg-start align-items-start g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">
                 <!-- Column 1 -->
                 <div class="col d-flex flex-column align-items-center align-items-lg-start">
                     <h6 class="fw-bold">دانلود مستقیم اپلیکیشن</h6>
@@ -668,15 +686,14 @@
                         <i class="fa-brands fa-google-play fs-2"></i>
                     </div>
                 </div>
-
                 <!-- Column 2 -->
                 <div class="col d-flex flex-column align-items-center align-items-lg-start text-light">
-                    <h5 class="fw-bold">پارسی پی</h5>
+                    <h5 class="fw-bold mt-1 mt-md-2">پارسی پی</h5>
                     <p class="fw-bold lh-lg small text-justify border-bottom py-3">
                         با بیش از 8 سال پیشینه مثبت در زمینه خرید و فروش ارزهای دیجیتال به صورت آنلاین و تحویل آنی به
                         مشتریان خود خدمت رسانی کرده است.
                     </p>
-                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-2">
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 my-3">
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-telegram"></i>
                         <i class="fa-brands fa-linkedin-in"></i>

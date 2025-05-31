@@ -34,7 +34,7 @@
     <!---------------------------------------------------------------------header--------------------------------------------------------------------------------------------->
     <header>
         <!---------------------------------------------------------------------navbar--------------------------------------------------------------------------------------------->
-        <nav class="navbar navbar-expand-md  shadow-sm gary-color">
+        <nav class="navbar navbar-expand-md shadow-sm gary-color">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./assets/img/logohorizintal.png" alt="logo" width="150"
                         height="55"></a>
@@ -46,20 +46,21 @@
 
                 <!--navbar-->
                 <div class="collapse navbar-collapse d-none d-md-block ">
-                    <ul class="navbar-nav me-auto mb-lg-0 ">
+                    <ul class="navbar-nav me-auto mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#">خانه</a>
+                            <a class="nav-link fw-bold add-small-on-md" href="#">خانه</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#">قیمت ارز دیجیتال</a>
+                            <a class="nav-link fw-bold add-small-on-md" href="#">قیمت ارز دیجیتال</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#">اخبار و مقالات</a>
+                            <a class="nav-link fw-bold add-small-on-md" href="#">اخبار و مقالات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="#">راهنما</a>
+                            <a class="nav-link fw-bold add-small-on-md" href="#">راهنما</a>
                         </li>
                     </ul>
+
                     <div class="d-flex align-items-center flex-nowrap gap-24px">
                         <a href="#" class="btn btn-outline-danger rounded-5 min-w-103">ورود</a>
                         <a href="#" class="btn btn-outline-danger rounded-5 min-w-103 me-1">ثبت‌نام</a>
@@ -76,17 +77,17 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav me-auto mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-dark" href="#">خانه</a>
+                            <li class="nav-item  add-small-on-md">
+                                <a class="nav-link active text-dark add-small-on-md" href="#">خانه</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">قیمت ارز دیجیتال</a>
+                            <li class="nav-item  add-small-on-md">
+                                <a class="nav-link add-small-on-md " href="#">قیمت ارز دیجیتال</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">اخبار و مقالات</a>
+                            <li class="nav-item  add-small-on-md">
+                                <a class="nav-link add-small-on-md" href="#">اخبار و مقالات</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">راهنما</a>
+                            <li class="nav-item  add-small-on-md">
+                                <a class="nav-link add-small-on-md" href="#">راهنما</a>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center gap-2">
@@ -101,47 +102,41 @@
             </div>
         </nav>
     </header>
-
     <!----------------------------------------------------------------------main------------------------------------------------------------------------------------------->
     <main>
-        <div class="hero py-5">
-            <div class="container">
-                <div class="d-flex flex-column align-items-center text-center">
-                    <p class="text-nowrap fw-bold divider-top">به جمع همراهان ما در پارسی‌پی بپیوندید.</p>
-                    <p class="text-center text-secondary mt-3 font-color" style="max-width:600px;">
-                        می‌توانید هرگونه سوال یا ابهام احتمالی را با تیم مجرب پشتیبانی در میان بگذارید تا به آنها پاسخ
-                        داده شود.
-                        ارتباط نزدیک و کارآمد با کاربران گرامی از اهداف اصلی این مجموعه است.
-                    </p>
-                    <div class="input-group my-4 flex-nowrap " style="max-width:450px;">
-                        <input type="text" name="inpamount-1"
-                            class="form-control outline-0 border-0 rounded-end rounded-5 gary-color "
-                            placeholder=" شماره موبایل خود را وارد کنید.">
-                        <button
-                            class="btn btn-outline-danger d-flex align-items-center gap-1 flex-nowrap rounded-start rounded-5"
-                            type="button" id="button-addon1">
-                            <span class="text-nowrap d-none d-md-block ">آغاز کنید</span>
-                            <i class="fa fa-angle-left"></i>
-                        </button>
-                    </div>
+        <div class="container py-5">
+            <div class="d-flex flex-column align-items-center text-center">
+                <p class="text-nowrap fw-bold divider-top">به جمع همراهان ما در پارسی‌پی بپیوندید.</p>
+                <p class="text-center text-secondary mt-3 font-color" style="max-width:600px;">
+                    می‌توانید هرگونه سوال یا ابهام احتمالی را با تیم مجرب پشتیبانی در میان بگذارید تا به آنها پاسخ
+                    داده شود.
+                    ارتباط نزدیک و کارآمد با کاربران گرامی از اهداف اصلی این مجموعه است.
+                </p>
+                <div class="input-group my-4 flex-nowrap" style="max-width:450px;">
+                    <input type="text" name="inpamount-1"
+                        class="form-control outline-0 border-0 rounded-end rounded-5 gary-color "
+                        placeholder=" شماره موبایل خود را وارد کنید.">
+                    <button
+                        class="btn btn-outline-danger d-flex align-items-center gap-1 flex-nowrap rounded-start rounded-5"
+                        type="button" id="button-addon1">
+                        <span class="text-nowrap d-none d-md-block ">آغاز کنید</span>
+                        <i class="fa fa-angle-left"></i>
+                    </button>
                 </div>
             </div>
         </div>
-        <!----------------------------------------------------------------part-1(curency)------------------------------------------------------------------------------------------------------>
-        <div class="cards-section">
-            <div class="container">
-                <div class="row row-cols-2 row-cols-lg-5 g-3  align-items-end ">
+        <!---------------------------
+        -------------------------------------part-1(Fluctuation of currencies)------------------------------------------------------------------------------------------------------>
+        <div class="starry-background-white">
+            <div class="container mb-5 ">
+                <div class="row row-cols-2 row-cols-lg-5 align-items-end g-3">
                     <!-- box 1 -->
                     <div class="col">
                         <div class="card crypto-card bg-light border-0 rounded-4 h-100">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <img src="./assets/img/btc.png" alt="btc" class="me-2" width="32" height="32">
-                                    <small class="fw-bold">ارز بیت کوین</small>
-                                </div>
-
+                            <div class="card-body d-flex flex-column gap-1">
+                                <img src="./assets/img/btc.png" alt="btc" class="me-2" width="32" height="32">
+                                <small class="fw-bold">ارز بیت کوین</small>
                                 <span class="fw-bold text-end fs-4 mt-3">103,452,3$</span>
-
                                 <div class="d-flex justify-content-end align-items-center mt-3">
                                     <img src="./assets/img/arrow-elbow-right.png" alt="arrow" width="24" height="24">
                                     <div
@@ -160,7 +155,7 @@
                                         <i class="fas fa-caret-down text-danger"></i>
                                     </div>
                                 </div>
-                                <p class="mt-3 small text-muted text-md-nowrap">🔹 نوسانات 24 ساعت گذشته ارز</p>
+                                <p class="mt-3 small text-muted text-md-nowrap">🔹نوسانات 24 ساعت گذشته ارز</p>
                             </div>
                         </div>
                     </div>
@@ -168,7 +163,7 @@
                     <!-- box 2 -->
                     <div class="col">
                         <div class="card crypto-card bg-light border-0 rounded-4 h-100">
-                            <div class="card-body d-flex flex-column  ">
+                            <div class="card-body d-flex flex-column">
                                 <img src="./assets/img/teter.png" alt="tether" class="me-2" width="32" height="32">
                                 <small class="text-secondary my-2">
                                     <span class="fw-bold text-dark">تتر</span> (Tether)
@@ -249,7 +244,7 @@
                                         <i class="fas fa-caret-down text-danger"></i>
                                     </div>
                                 </div>
-                                <p class="mt-3 small text-muted text-md-nowrap">🔹 نوسانات 24 ساعت گذشته ارز</p>
+                                <p class="mt-3 small text-muted text-md-nowrap">🔹نوسانات 24 ساعت گذشته ارز</p>
                             </div>
                         </div>
 
@@ -261,7 +256,6 @@
         <div class="bg-light d-flex flex-column align-items-center text-center p-4 gap-2">
             <p class="fw-bold divider-top">چرا پارسی‌پی؟</p>
             <div class="container">
-
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 align-items-stretch h-100">
                     <!--box-1-->
                     <div class="col d-flex mt-2">
@@ -326,7 +320,7 @@
                 </div>
             </div>
         </div>
-        <!----------------------------------------------------------------part-3(steps)-------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------part-3(Steps to buy currency)-------------------------------------------------------------------------------------------------------->
         <div class="step-section">
             <div class="container py-4 d-flex flex-column align-items-center">
                 <p class="fw-bold divider-top">می‌خوام ارز بخرم، از کجا شروع کنم؟</p>
@@ -383,8 +377,8 @@
                 </div>
             </div>
         </div>
-        <!---------------------------------------------------------------part-4(24change)------------------------------------------------------------------------------------------------------>
-        <div class="container">
+        <!---------------------------------------------------------------part-4(24-hour changes in the currency field)------------------------------------------------------------------------------------------------------>
+        <div class="container ">
             <div class="d-flex flex-column align-items-center text-center">
                 <p class="fw-bold divider-top"> تغییرات 24 ساعت اخیر در حوزه ارز دیجیتال </p>
                 <div class="input-group my-4 flex-nowrap" style="max-width:450px;">
@@ -630,7 +624,8 @@
                 </div>
             </div>
         </div>
-        <!--------------------------------------------------------------part-5(download-app)--------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------part-5(Download the application)--------------------------------------------------------------------------------------------------->
+       
         <div class="container download-section d-flex justify-content-between gap-3 bg-light mt-5 p-5 rounded-5 position-relative"
             style="max-width: 700px;">
             <div class="flex-column flex-nowrap p-3">
@@ -670,97 +665,114 @@
                 <img src="./assets/img/Mockup.png" alt="mobile" class="img-phone" style="height: 450px;">
             </div>
         </div>
-        <!-------------------------------------------------------------part-6(answer-question)------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------------------part-6(Answers to your frequently asked questions)------------------------------------------------------------------------------------------------->
         <div class="d-flex flex-column align-items-center mt-5">
-            <p class="fw-bold divider-top">پاسخ به سوالات متداول شما </p>
+            <p class="fw-bold divider-top">پاسخ به سوالات متداول شما</p>
             <div class="container">
                 <div class="accordion mt-5 " id="faqAccordion">
                     <!-- FAQ 1 -->
                     <div class="accordion-item border-0">
-                        <h2 class="accordion-header" id="heading1">
-                            <button class="accordion-button collapsed d-flex justify-content-between" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false"
-                                aria-controls="faq1">
-                                <span class="border text-secondary fw-bold px-2 pt-1 me-2">1</span>
-                                <span class="fw-bold text-secondary">کسب درآمد از طریق پارسی‌پی چگونه است؟</span>
-                                <i class="bi bi-plus custom-icon"></i>
-                            </button>
-                        </h2>
-                        <div id="faq1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-secondary">
-                                پاسخ: می‌توانید با معرفی دوستان خود و استفاده از خدمات پارسی‌پی کسب درآمد کنید.
-                            </div>
-                        </div>
-                    </div>
+                        <div class="mt-5 p-0 d-flex flex-column">
+                            <div class="accordion  mt-3" id="faqAccordion">
+                                <!-- FAQ 1 -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="heading1">
+                                        <button class="accordion-button collapsed d-flex justify-content-between"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                                            aria-expanded="false" aria-controls="faq1">
+                                            <span class="border text-secondary fw-bold px-2 pt-1 me-2">1</span>
+                                            <span class="fw-bold text-secondary add-small-on-sm text-wrap">کسب درآمد از
+                                                طریق پارسی‌پی چگونه
+                                                است؟</span>
+                                            <i class="bi bi-plus custom-icon"></i>
+                                        </button>
+                                    </h2>
+                                    <div id="faq1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary">
+                                            پاسخ: می‌توانید با معرفی دوستان خود و استفاده از خدمات پارسی‌پی کسب
+                                            درآمد کنید.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ 2 -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="heading2">
+                                        <button class="accordion-button collapsed d-flex justify-content-between"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
+                                            aria-expanded="false" aria-controls="faq2">
+                                            <span class="border px-2 pt-1 me-2 text-secondary fw-bold">2</span>
+                                            <span class="fw-bold text-secondary add-small-on-sm text-wrap"> از پارسی‌پی
+                                                چطور وجه زمان سفارش رو
+                                                دریافت می‌کنم؟</span>
+                                        </button>
+                                    </h2>
+                                    <div id="faq2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary">
+                                            پاسخ: مبلغ سفارش پس از تأیید در حساب پارسی‌پی شما قرار می‌گیرد.
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <!-- FAQ 2 -->
-                    <div class="accordion-item border-0">
-                        <h2 class="accordion-header" id="heading2">
-                            <button class="accordion-button collapsed d-flex justify-content-between" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
-                                aria-controls="faq2">
-                                <span class="border px-2 pt-1 me-2 text-secondary fw-bold">2</span>
-                                <span class="fw-bold text-secondary"> از پارسی‌پی چطور وجه زمان سفارش رو دریافت می‌کنم؟</span>
-                            </button>
-                        </h2>
-                        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-secondary">
-                                پاسخ: مبلغ سفارش پس از تأیید در حساب پارسی‌پی شما قرار می‌گیرد.
-                            </div>
-                        </div>
-                    </div>
+                                <!-- FAQ 3 -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="heading3">
+                                        <button class="accordion-button collapsed d-flex justify-content-between"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
+                                            aria-expanded="false" aria-controls="faq3">
+                                            <span class="px-2 pt-1 border text-secondary me-2 fw-bold">3</span>
+                                            <span class="fw-bold text-secondary add-small-on-sm text-wrap"> کسب درآمد از
+                                                طریق پارسی‌پی چگونه
+                                                است؟</span>
+                                        </button>
+                                    </h2>
+                                    <div id="faq3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary">
+                                            کاربری گرامی، در صورت انجام خرید توسط کاربر معرفی شده، مبلغی به صورت
+                                            پورسانت در ازای
+                                            خرید مستقیم
+                                            به موجودی کیف پول پارسی‌پی شخص معرف اضافه خواهد شد.
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <!-- FAQ 3 -->
-                    <div class="accordion-item border-0">
-                        <h2 class="accordion-header" id="heading3">
-                            <button class="accordion-button collapsed d-flex justify-content-between" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
-                                aria-controls="faq3">
-                                <span class="px-2 pt-1 border text-secondary me-2 fw-bold">3</span>
-                                <span class="fw-bold text-secondary"> کسب درآمد از طریق پارسی‌پی چگونه است؟</span>
-                            </button>
-                        </h2>
-                        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-secondary">
-                                کاربری گرامی، در صورت انجام خرید توسط کاربر معرفی شده، مبلغی به صورت پورسانت در ازای
-                                خرید مستقیم
-                                به موجودی کیف پول پارسی‌پی شخص معرف اضافه خواهد شد.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 4 -->
-                    <div class="accordion-item border-0">
-                        <h2 class="accordion-header" id="heading4">
-                            <button class="accordion-button collapsed d-flex justify-content-between" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
-                                aria-controls="faq4">
-                                <span class="px-2 pt-1 text-secondary fw-bold border me-2">4</span>
-                                <span class="fw-bold text-secondary"> از پارسی‌پی خرید کنم، چه زمانی سفارش رو دریافت می‌کنم؟</span>
-                            </button>
-                        </h2>
-                        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                            data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-secondary">
-                                بلافاصله بعد از اتمام عملیات پرداخت، انتقال رمزارز شما انجام میشود و جزئیات انتقال از
-                                طریق قسمت
-                                سفارشات حساب کاربری پارسی‌پی شما قابل مشاهده می باشد.
+                                <!-- FAQ 4 -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="heading4">
+                                        <button class="accordion-button collapsed d-flex justify-content-between"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
+                                            aria-expanded="false" aria-controls="faq4">
+                                            <span class="px-2 pt-1 text-secondary fw-bold border me-2">4</span>
+                                            <span class="fw-bold text-secondary add-small-on-sm text-wrap"> از پارسی‌پی
+                                                خرید کنم، چه زمانی
+                                                سفارش رو دریافت می‌کنم؟</span>
+                                        </button>
+                                    </h2>
+                                    <div id="faq4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body text-secondary">
+                                            بلافاصله بعد از اتمام عملیات پرداخت، انتقال رمزارز شما انجام میشود و
+                                            جزئیات انتقال از
+                                            طریق قسمت
+                                            سفارشات حساب کاربری پارسی‌پی شما قابل مشاهده می باشد.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
+
     </main>
-    <!--------------------------------------------------------------------end-main------------------------------------------------------------------------------------------>
+    <!-------------------------------------------------------------------end-main------------------------------------------------------------------------------------------>
     <!--------------------------------------------------------------------footer----------------------------------------------------------------------------------------------->
-    <footer class="bg-footer text-light pt-5 pb-3 px-4 mt-3">
+    <footer class="bg-footer text-light pt-5 pb-3 mt-3" id="footer">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center text-lg-start align-items-start g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center">
                 <!-- Column 1 -->
                 <div class="col d-flex flex-column align-items-center align-items-lg-start">
                     <h6 class="fw-bold">دانلود مستقیم اپلیکیشن</h6>
@@ -770,15 +782,14 @@
                         <i class="fa-brands fa-google-play fs-2"></i>
                     </div>
                 </div>
-
                 <!-- Column 2 -->
                 <div class="col d-flex flex-column align-items-center align-items-lg-start text-light">
-                    <h5 class="fw-bold">پارسی پی</h5>
+                    <h5 class="fw-bold mt-1 mt-md-2">پارسی پی</h5>
                     <p class="fw-bold lh-lg small text-justify border-bottom py-3">
                         با بیش از 8 سال پیشینه مثبت در زمینه خرید و فروش ارزهای دیجیتال به صورت آنلاین و تحویل آنی به
                         مشتریان خود خدمت رسانی کرده است.
                     </p>
-                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-2">
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3 my-3">
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-telegram"></i>
                         <i class="fa-brands fa-linkedin-in"></i>
