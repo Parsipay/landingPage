@@ -158,7 +158,9 @@ body {
 .amount {
   background-color: #f8f9fa;
 }
-
+.text-purple{
+  color:#ab4f9e
+}
 /* ===============================
    Backgrounds with Opacity
 ================================= */
@@ -251,7 +253,10 @@ li {
 .nav-link:active {
   text-decoration: underline;
 }
-
+ .offcanvas,
+  .offcanvas-body {
+    overflow-y: hidden !important;
+  }
 /* ===============================
    Icons
 ================================= */
