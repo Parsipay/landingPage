@@ -1,5 +1,11 @@
 $(document).ready(function () {
+//active links for header
+ $('.navbar-nav .nav-link').on('click', function (e) {
 
+      $('.navbar-nav .nav-link').removeClass('active');
+
+      $(this).addClass('active');
+    });
   // Initialize Swiper carousel
   new Swiper(".mySwiper", {
     loop: true,

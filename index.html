@@ -34,97 +34,112 @@
     <!---------------------------------------------------------------------header--------------------------------------------------------------------------------------------->
     <header>
         <!---------------------------------------------------------------------navbar--------------------------------------------------------------------------------------------->
-        <nav class="navbar navbar-expand-md shadow-sm gary-color">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/img/logohorizintal.png" alt="logo" width="150"
-                        height="55"></a>
+ <nav class="navbar navbar-expand-md shadow-sm bg-light">
+    <div class="container-fluid">
 
-                <!--offcanvas Button-->
-                <button class="btn btn-outline-danger d-md-none" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar">
-                    <i class='fas fa-list'></i> </button>
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/logohorizintal.png" alt="logo" width="150" height="55">
+        </a>
 
-                <!--navbar-->
-                <div class="collapse navbar-collapse d-none d-md-block ">
-                    <ul class="navbar-nav me-auto mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold add-small-on-md" href="#">خانه</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold add-small-on-md" href="#">قیمت ارز دیجیتال</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold add-small-on-md" href="#">اخبار و مقالات</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold add-small-on-md" href="#">راهنما</a>
-                        </li>
-                    </ul>
+        <!-- Toggler (Mobile) -->
+        <button class="navbar-toggler border-0 d-md-none" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mainNavbar">
+            <i class="fas fa-list fs-4"></i>
+        </button>
 
-                    <div class="d-flex align-items-center flex-nowrap gap-24px">
-                        <a href="#" class="btn btn-outline-danger rounded-5 min-w-103">ورود</a>
-                        <a href="#" class="btn btn-outline-danger rounded-5 min-w-103 me-1">ثبت‌نام</a>
-                        <span class="border-start border-2 ps-7px">
-                            <i class="fa-solid fa-download"></i>
-                        </span>
-                    </div>
-                </div>
-                <!-- Offcanvas-->
-                <div class="offcanvas offcanvas-start d-md-none" id="offcanvasNavbar">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title"><img src="./assets/img/logohorizintal.png" alt="logo" width="150"
-                                height="50"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="d-flex justify-content-between align-items-center mt-4">
-                            <div class="d-flex justify-content-between gap-2 ps-3">
-                                <button class="btn btn-outline-danger rounded-5 px-4">ورود</button>
-                                <button class="btn btn-outline-danger rounded-5 px-4">ثبت‌نام</button>
-                            </div>
-                            <i class="fa-solid fa-download text-purple fs-3"></i>
-                        </div>
-                        <ul class="navbar-nav me-auto mb-lg-0 mt-4">
-                            <li class="nav-item p-4">
-                                <a class="nav-link active text-dark " href="#"> <i
-                                        class="fa-solid fa-house text-purple me-3"></i>خانه</a>
-                            </li>
-                            <li class="nav-item p-4 ">
-                                <a class="nav-link  " href="#"> <i class="fa-solid fa-coins text-purple me-3"></i> قیمت
-                                    ارز دیجیتال</a>
-                            </li>
-                            <li class="nav-item p-4 ">
-                                <a class="nav-link " href="#"> <i class="fa-regular fa-newspaper text-purple me-3"></i>
-                                    اخبار و مقالات</a>
-                            </li>
-                            <li class="nav-item p-4 ">
-                                <a class="nav-link " href="#"><i
-                                        class="fa-solid fa-circle-info text-purple me-3"></i>راهنما</a>
-                            </li>
-                        </ul>
+        <!-- Desktop Navbar -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto fw-bold">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">خانه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">قیمت ارز دیجیتال</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">اخبار و مقالات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">راهنما</a>
+                </li>
+            </ul>
 
-                        <div class="d-flex justify-content-center mb-0 pb-0 mt-5">
-                            <img src="./assets/img/5471.jpg" alt="pic" width="400" height="300">
-                        </div>
-                    </div>
-                </div>
+            <!-- Actions -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="btn btn-outline-danger rounded-pill px-4">ورود</a>
+                <a href="#" class="btn btn-outline-danger rounded-pill px-4">ثبت‌نام</a>
+                <span class="border-start ps-3">
+                    <i class="fa-solid fa-download fs-5 head-color"></i>
+                </span>
             </div>
-        </nav>
+        </div>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="mainNavbar">
+            <div class="offcanvas-header">
+                <img src="./assets/img/logohorizintal.png" alt="logo" width="140">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body d-flex flex-column">
+
+                <!-- Mobile Actions -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-danger rounded-pill px-4">ورود</a>
+                        <a href="#" class="btn btn-outline-danger rounded-pill px-4">ثبت‌نام</a>
+                    </div>
+                    <i class="fa-solid fa-download fs-3 text-purple"></i>
+                </div>
+                <!-- Mobile Menu -->
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-house me-3 text-purple"></i>خانه
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-coins me-3 text-purple"></i>قیمت ارز دیجیتال
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-regular fa-newspaper me-3 text-purple"></i>اخبار و مقالات
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-circle-info me-3 text-purple"></i>راهنما
+                        </a>
+                    </li>
+                </ul>
+                <!-- Image -->
+                <div class="mt-auto text-center pt-4">
+                    <img src="./assets/img/5471.jpg" class="img-fluid rounded" alt="pic">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</nav>
     </header>
     <!----------------------------------------------------------------------main------------------------------------------------------------------------------------------->
     <main>
         <div class="container py-5">
             <div class="d-flex flex-column align-items-center text-center">
-                <p class="text-nowrap fw-bold divider-top">به جمع همراهان ما در پارسی‌پی بپیوندید.</p>
-                <p class="text-center text-secondary mt-3 font-color" style="max-width:600px;">
+                <p class="text-nowrap fw-bold divider-top head-color">به جمع همراهان ما در پارسی‌پی بپیوندید.</p>
+                <p class="text-center text-secondary mt-3">
                     می‌توانید هرگونه سوال یا ابهام احتمالی را با تیم مجرب پشتیبانی در میان بگذارید تا به آنها پاسخ
-                    داده شود.
-                    ارتباط نزدیک و کارآمد با کاربران گرامی از اهداف اصلی این مجموعه است.
+                    داده شود.</p>
+                  <p class="text-center text-secondary ">  ارتباط نزدیک و کارآمد با کاربران گرامی از اهداف اصلی این مجموعه است.
                 </p>
                 <div class="input-group my-4 flex-nowrap" style="max-width:450px;">
-                    <input type="text" name="inpamount-1"
+                    <input type="tel" name="inpamount-1"
                         class="form-control outline-0 border-0 rounded-end rounded-5 gary-color "
-                        placeholder=" شماره موبایل خود را وارد کنید.">
+                        placeholder="لطفا شماره تلفن همراه خود را وارد کنید">
                     <button
                         class="btn btn-outline-danger d-flex align-items-center gap-1 flex-nowrap rounded-start rounded-5"
                         type="button" id="button-addon1">

@@ -1,116 +1,9 @@
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 100;
-  src: url(../fonts/eot/dana-thin.eot);
-  src:
-    url(../fonts/eot/dana-thin.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-thin.woff2) format("woff2"),
-    url(../fonts/woff/dana-thin.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 200;
-  src: url(../fonts/eot/dana-extralight.eot);
-  src:
-    url(../fonts/eot/dana-extralight.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-extralight.woff2) format("woff2"),
-    url(../fonts/woff/dana-extralight.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/eot/dana-light.eot);
-  src:
-    url(../fonts/eot/dana-light.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-light.woff2) format("woff2"),
-    url(../fonts/woff/dana-light.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/eot/dana-regular.eot);
-  src:
-    url(../fonts/eot/dana-regular.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-regular.woff2) format("woff2"),
-    url(../fonts/woff/dana-regular.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 500;
-  src: url(../fonts/eot/dana-medium.eot);
-  src:
-    url(../fonts/eot/dana-medium.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-medium.woff2) format("woff2"),
-    url(../fonts/woff/dana-medium.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 600;
-  src: url(../fonts/eot/dana-demibold.eot);
-  src:
-    url(../fonts/eot/dana-demibold.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-demibold.woff2) format("woff2"),
-    url(../fonts/woff/dana-demibold.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 700;
-  src: url(../fonts/eot/dana-bold.eot);
-  src:
-    url(../fonts/eot/dana-bold.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-bold.woff2) format("woff2"),
-    url(../fonts/woff/dana-bold.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 750;
-  src: url(../fonts/eot/dana-ultrabold.eot);
-  src:
-    url(../fonts/eot/dana-ultrabold.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-ultrabold.woff2) format("woff2"),
-    url(../fonts/woff/dana-ultrabold.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 800;
-  src: url(../fonts/eot/dana-extrabold.eot);
-  src:
-    url(../fonts/eot/dana-extrabold.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-extrabold.woff2) format("woff2"),
-    url(../fonts/woff/dana-extrabold.woff) format("woff");
-}
-@font-face {
-  font-family: dana;
-  font-style: normal;
-  font-weight: 900;
-  src: url(../fonts/eot/dana-black.eot);
-  src:
-    url(../fonts/eot/dana-black.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/woff2/dana-black.woff2) format("woff2"),
-    url(../fonts/woff/dana-black.woff) format("woff");
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src:
-    local("Roboto-Regular"),
-    local(Roboto-Regular),
-    url(../fonts/woff2/Roboto-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-/* ===============================
-   Base
-================================= */
+.popover *,body{font-family:dana,sans-serif}
+@font-face{font-family:dana;src:url(/assets/fonts/woff2/dana-regular.woff2) format("woff2");font-weight:400}
+@font-face{font-family:dana;src:url(/assets/fonts/woff2/dana-medium.woff2) format("woff2");font-weight:500}
+@font-face{font-family:dana;src:url(/assets/fonts/woff2/dana-bold.woff2) format("woff2");font-weight:700}
+   
+
 body {
   font-family: "dana";
   font-size: 13px;
@@ -129,13 +22,14 @@ body {
   --opacity-success: #d0f4e6;
   --opacity-warning: rgba(255, 207, 104, 0.356);
   --main-gary-element: #f8fafd;
+  --important-font-color :#47505f;
 }
 
 /* ===============================
    Typography & Colors
 ================================= */
-.font-color {
-  color: #616e85 !important;
+.head-color {
+  color: var(--important-font-color)
 }
 .text-gray {
   color: #dee4ec !important;
@@ -247,11 +141,19 @@ body {
 ================================= */
 li {
   font-size: 16px;
-  padding: 0px 10px;
+  padding: 0 10px;
+}
+.nav-link {
+  color: #6c757d; /* text-secondary */
+  transition: all 0.2s ease;
 }
 .nav-link:focus,
-.nav-link:active {
+.nav-link.active {
+  color: var(--main-purple) !important;
   text-decoration: underline;
+  text-decoration-color: var(--main-purple);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
 }
  .offcanvas,
   .offcanvas-body {
@@ -283,7 +185,29 @@ input:not(:placeholder-shown)::placeholder {
 .custom-input:not(:placeholder-shown)::placeholder {
   opacity: 0;
 }
+.input-group .form-control {
+  outline: none !important;
+}
 
+.input-group .form-control:focus,
+.input-group .form-control:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--main-purple) !important;
+ 
+}
+input::placeholder {
+  color: #d2d2d3!important;      /* خاکستری روشن */
+  font-size: 16px;
+  text-align: end;    /* یا center اگر میخوای وسط باشه */
+  opacity: 1;           /* بعضی مرورگرها placeholder کم‌رنگ نمایش میدن */
+}
+
+input.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
 /* ===============================
    Interactive
 ================================= */
@@ -441,6 +365,9 @@ media query
   .img-phone {
     height: auto;
     max-width: 100%;
+  }
+  nav li{
+    font-size: smaller;
   }
 }
 
