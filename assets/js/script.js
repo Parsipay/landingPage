@@ -61,17 +61,18 @@ $(document).ready(function () {
   if ($container.length) {
 const colors = [
   '#536dfe',  // آبی روشن
-
+  'yellow',
+  'tomato',+
   '#9ea7aa',  // نقره‌ای خاکستری روشن
   '#6a4c8f'   // بنفش ملایم
 ];
     // Generate 120 stars with random positions, sizes, and colors
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 150; i++) {
       const $star = $('<div class="star"></div>');
       const size = Math.random() * 1 + 1;
 
       $star.css({
-        top: `${Math.random() * 100}%`,
+        top: `${Math.random() *100}%`,
         left: `${Math.random() * 100}%`,
         width: `${size}px`,
         height: `${size}px`,

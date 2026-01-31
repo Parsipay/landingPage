@@ -32,7 +32,7 @@ body {
   color: var(--important-font-color)
 }
 .text-gray {
-  color: #dee4ec !important;
+  color: #b7bfca !important;
 }
 .bg-green, .box-up {
   color: var(--main-success);
@@ -353,6 +353,9 @@ media query
     width: 20px;
     height: 20px;
   }
+     .box-up{
+    font-size: xx-small!important;
+  }
 }
 @media (max-width: 991.98px) and (min-width: 768px) {
   .imagephone {
@@ -369,8 +372,13 @@ media query
   nav li{
     font-size: smaller;
   }
-}
 
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .box-up  {
+        font-size: xx-small; 
+    }
+}
 
 @media (max-width: 900px) {
   .add-small-on-md {
@@ -386,4 +394,5 @@ media query
     border-bottom: 1px solid var(--main-purple);
     margin-bottom: 15px !important;
   }
+ 
 }
