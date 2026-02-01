@@ -1,85 +1,42 @@
 $(document).ready(function () {
-//active links for header
- $('.navbar-nav .nav-link').on('click', function (e) {
 
-      $('.navbar-nav .nav-link').removeClass('active');
-
-      $(this).addClass('active');
-    });
-  // Initialize Swiper carousel
-  new Swiper(".mySwiper", {
-    loop: true,
-    spaceBetween: 20,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-      },
-      768: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-      },
-    },
+  // -------------------------------
+  // 1. Active Links in Navbar
+  // -------------------------------
+  $('.navbar-nav .nav-link').on('click', function () {
+    // Remove 'active' class from all links
+    $('.navbar-nav .nav-link').removeClass('active');
+    // Add 'active' class to the clicked link
+    $(this).addClass('active');
   });
 
-  // Display today's date in Persian format
-  const now = new Date();
-  const formatter = new Intl.DateTimeFormat('fa-IR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-
-  const parts = formatter.formatToParts(now);
-  let day = '', month = '', year = '';
-
-  // Extract day, month, and year parts
-  $.each(parts, function (index, part) {
-    if (part.type === 'day') day = part.value;
-    if (part.type === 'month') month = part.value;
-    if (part.type === 'year') year = part.value;
-  });
-
-  // Insert formatted date into element with class .today-date
-  const formattedDate = `${day} ${month} ${year}`;
-  $('.today-date').text(formattedDate);
-
-  // Create starry background effect
+  // 2. Create Starry Background Effect
   const $container = $('.starry-background-white');
   if ($container.length) {
-const colors = [
-  '#536dfe',  // آبی روشن
-  'yellow',
-  'tomato',+
-  '#9ea7aa',  // نقره‌ای خاکستری روشن
-  '#6a4c8f'   // بنفش ملایم
-];
-    // Generate 120 stars with random positions, sizes, and colors
+    // Define possible star colors
+    const colors = [
+      '#536dfe', 
+      'yellow',
+      'tomato',
+      '#9ea7aa',  
+      '#6a4c8f',
+      '#41d61bff' 
+    ];
+    // Generate 150 stars
     for (let i = 0; i < 150; i++) {
       const $star = $('<div class="star"></div>');
+      // Random size between 1px and 2px
       const size = Math.random() * 1 + 1;
-
+      // Apply random position, size, color, and animation delay
       $star.css({
-        top: `${Math.random() *100}%`,
+        top: `${Math.random() * 100}%`,
         left: `${Math.random() * 100}%`,
         width: `${size}px`,
         height: `${size}px`,
         background: colors[Math.floor(Math.random() * colors.length)],
         animationDelay: `${Math.random() * 2}s`
       });
-
+      // Append star to container
       $container.append($star);
     }
   }

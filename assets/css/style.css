@@ -4,7 +4,7 @@
 @font-face{font-family:dana;src:url(/assets/fonts/woff2/dana-bold.woff2) format("woff2");font-weight:700}
    
 
-body {
+* {
   font-family: "dana";
   font-size: 13px;
   line-height: 1;
@@ -54,6 +54,10 @@ body {
 }
 .text-purple{
   color:#ab4f9e
+}
+.border-purple{
+  border-color:var(--main-purple)!important;
+  background-color:rgb(238,220,236) ;
 }
 /* ===============================
    Backgrounds with Opacity
@@ -194,13 +198,16 @@ input:not(:placeholder-shown)::placeholder {
   outline: none !important;
   box-shadow: none !important;
   border: 1px solid var(--main-purple) !important;
- 
 }
-input::placeholder {
-  color: #d2d2d3!important;      /* خاکستری روشن */
+input::placeholder{
+    color: #d2d2d3!important;  
+
+}
+.inp1::placeholder{
+  color: #d2d2d3!important;  
   font-size: 16px;
-  text-align: end;    /* یا center اگر میخوای وسط باشه */
-  opacity: 1;           /* بعضی مرورگرها placeholder کم‌رنگ نمایش میدن */
+  text-align: end; 
+  opacity: 1;  
 }
 
 input.form-control:focus {
@@ -234,7 +241,9 @@ input.form-control:focus {
   height: 14px;
 }
 
-
+.change{
+background: url('../img/logo2.png');
+}
 /* ===============================
   backgreound-custom
 ================================= */
@@ -256,27 +265,6 @@ input.form-control:focus {
   0% { opacity: 0.2; transform: scale(0.8); }
   100% { opacity: 1; transform: scale(1.4); }
 }
-
-/* ===============================
-swipper
-================================= */
-.swiper-button-next,
-.swiper-button-prev {
-  top: auto;
-  bottom: 5px;
-  transform: translateY(0);
-}
-.swiper-button-prev,
-.swiper-button-next {
-  width: 25px;    
-  height: 25px;    
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 15px !important; 
-}
-
 
 /* ===============================
 accordion
@@ -340,6 +328,11 @@ carousel
 media query
 ================================= */
 
+@media (max-width: 499px) {
+  .price {
+    font-size: x-small !important;
+  }
+}
 @media (max-width: 576px) {
   .add-small-on-sm {
     font-size: 0.7rem;
@@ -355,6 +348,10 @@ media query
   }
      .box-up{
     font-size: xx-small!important;
+  }
+  .price,
+  .price span {
+    font-size: x-small !important;
   }
 }
 @media (max-width: 991.98px) and (min-width: 768px) {
@@ -380,7 +377,7 @@ media query
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .add-small-on-md {
     font-size: 0.875rem !important;
     white-space: nowrap !important;
