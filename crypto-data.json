@@ -1,0 +1,45 @@
+[
+  {
+    "name": "بیت کوین",
+    "symbol": "BTC",
+    "icon": "btc.png",
+    "price": "102,757.9",
+    "trend": "down",
+    "percent": 2,
+    "upValue": "0.00001",
+    "downValue": "0.00001"
+  },
+  {
+    "name": "تتر",
+    "symbol": "USDT",
+    "icon": "teter.png",
+    "price": "1.00",
+    "trend": "neutral"
+  },
+  {
+    "name": "ترون",
+    "symbol": "TRX",
+    "icon": "trx.png",
+    "price": "0.12",
+    "trend": "up",
+    "percent": 2
+  },
+  {
+    "name": "دوج کوین",
+    "symbol": "DOGE",
+    "icon": "doge.png",
+    "price": "0.08",
+    "trend": "up",
+    "percent": 2
+  },
+  {
+    "name": "شیبا",
+    "symbol": "SHIBA",
+    "icon": "shiba.png",
+    "price": "0.00001",
+    "trend": "up",
+    "percent": 2,
+    "upValue": "0.00001",
+    "downValue": "0.00001"
+  }
+]

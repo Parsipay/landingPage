@@ -1,0 +1,72 @@
+[
+  {
+    "title": "ارز بیت کوین",
+    "icon": "btc.png",
+    "price": "102,757.9",
+    "trend": "down",
+    "percent": 2
+  },
+  {
+    "title": "ارز تتر",
+    "icon": "teter.png",
+    "price": "1",
+    "trend": "neutral",
+    "percent": 2
+  },
+  {
+    "title": "ارز اتریوم",
+    "icon": "eter.png",
+    "price": "123.568",
+    "trend": "up",
+    "percent": 2
+  },
+  {
+    "title": "ارز شیبااینو",
+    "icon": "shiba.png",
+    "price": "32568.659.4",
+    "trend": "up",
+    "percent": 25
+  },
+  {
+    "title": "ارز ترون",
+    "icon": "trx.png",
+    "price": "32568.659.4",
+    "trend": "down",
+    "percent": 2
+  },
+  {
+    "title": "ارز اتریوم",
+    "icon": "eter.png",
+    "price": "32568.659.4",
+    "trend": "up",
+    "percent": 3
+  },
+  {
+    "title": "ارز بیت کوین",
+    "icon": "btc.png",
+    "price": "32568.659.4",
+    "trend": "down",
+    "percent": 2
+  },
+  {
+    "title": "ارز شیبااینو",
+    "icon": "shiba.png",
+    "price": "32568.659.4",
+    "trend": "down",
+    "percent": 2
+  },
+  {
+    "title": "ارز ترون",
+    "icon": "trx.png",
+    "price": "32568.659.4",
+    "trend": "down",
+    "percent": 15
+  },
+  {
+    "title": "ارز تتر",
+    "icon": "teter.png",
+    "price": "32568.659.4",
+    "trend": "neutral",
+    "percent": 2
+  }
+]

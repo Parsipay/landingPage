@@ -1,8 +1,22 @@
-.popover *,body{font-family:dana,sans-serif}
-@font-face{font-family:dana;src:url(/assets/fonts/woff2/dana-regular.woff2) format("woff2");font-weight:400}
-@font-face{font-family:dana;src:url(/assets/fonts/woff2/dana-medium.woff2) format("woff2");font-weight:500}
-@font-face{font-family:dana;src:url(/assets/fonts/woff2/dana-bold.woff2) format("woff2");font-weight:700}
-   
+.popover *,
+body {
+  font-family: dana, sans-serif;
+}
+@font-face {
+  font-family: dana;
+  src: url(/assets/fonts/woff2/dana-regular.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: dana;
+  src: url(/assets/fonts/woff2/dana-medium.woff2) format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: dana;
+  src: url(/assets/fonts/woff2/dana-bold.woff2) format("woff2");
+  font-weight: 700;
+}
 
 * {
   font-family: "dana";
@@ -20,24 +34,26 @@
   --main-danger: #ea3943;
   --opacity-danger: #fbd7d9;
   --opacity-success: #d0f4e6;
-  --opacity-warning: rgba(255, 207, 104, 0.356);
+  --opacity-warning: rgba(255, 224, 156, 0.205);
   --main-gary-element: #f8fafd;
-  --important-font-color :#47505f;
+  --important-font-color: #47505f;
 }
 
 /* ===============================
    Typography & Colors
 ================================= */
 .head-color {
-  color: var(--important-font-color)
+  color: var(--important-font-color);
 }
 .text-gray {
   color: #b7bfca !important;
 }
-.bg-green, .box-up {
+.bg-green,
+.box-up {
   color: var(--main-success);
 }
-.bg-red, .box-down {
+.bg-red,
+.box-down {
   color: var(--main-danger);
 }
 .gary-color {
@@ -52,12 +68,12 @@
 .amount {
   background-color: #f8f9fa;
 }
-.text-purple{
-  color:#ab4f9e
+.text-purple {
+  color: #ab4f9e;
 }
-.border-purple{
-  border-color:var(--main-purple)!important;
-  background-color:rgb(238,220,236) ;
+.border-purple {
+  border-color: var(--main-purple) !important;
+  background-color: rgb(238, 220, 236);
 }
 /* ===============================
    Backgrounds with Opacity
@@ -116,7 +132,9 @@
 .justify {
   text-align: justify;
 }
-
+.extra-small {
+  font-size: 5px;
+}
 /* ===============================
    Sections Background
 ================================= */
@@ -159,10 +177,10 @@ li {
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
 }
- .offcanvas,
-  .offcanvas-body {
-    overflow-y: hidden !important;
-  }
+.offcanvas,
+.offcanvas-body {
+  overflow-y: hidden !important;
+}
 /* ===============================
    Icons
 ================================= */
@@ -199,15 +217,14 @@ input:not(:placeholder-shown)::placeholder {
   box-shadow: none !important;
   border: 1px solid var(--main-purple) !important;
 }
-input::placeholder{
-    color: #d2d2d3!important;  
-
+input::placeholder {
+  color: #d2d2d3 !important;
 }
-.inp1::placeholder{
-  color: #d2d2d3!important;  
-  font-size: 16px;
-  text-align: end; 
-  opacity: 1;  
+.inp1::placeholder {
+  color: #d2d2d3 !important;
+  font-size: 10px;
+  text-align: start;
+  opacity: 1;
 }
 
 input.form-control:focus {
@@ -241,8 +258,8 @@ input.form-control:focus {
   height: 14px;
 }
 
-.change{
-background: url('../img/logo2.png');
+.change {
+  background: url("../img/logo2.png");
 }
 /* ===============================
   backgreound-custom
@@ -259,11 +276,17 @@ background: url('../img/logo2.png');
   border-radius: 50%;
   opacity: 0.8;
   animation: twinkle 2s infinite ease-in-out alternate;
-  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 @keyframes twinkle {
-  0% { opacity: 0.2; transform: scale(0.8); }
-  100% { opacity: 1; transform: scale(1.4); }
+  0% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
 }
 
 /* ===============================
@@ -284,13 +307,14 @@ accordion
 }
 .accordion-button::after {
   content: "+";
-  font-size: 20px;
+  font-size: 15px;
   transition:
-    content 0.3s ease,
-    background-color 0.3s ease;
+  content 0.3s ease,
+  background-color 0.3s ease;
   background-image: none !important;
-  padding: 0 6px;
+  padding: 1px 6px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .accordion-button[aria-expanded="true"]::after {
@@ -322,18 +346,26 @@ carousel
   filter: invert(39%) sepia(57%) saturate(500%) hue-rotate(80deg) brightness(90%) contrast(85%);
 }
 
-
-
 /* ===============================
 media query
 ================================= */
 
-@media (max-width: 499px) {
-  .price {
+@media (max-width: 420px) {
+  input::placeholder {
     font-size: x-small !important;
   }
+  .price,
+  .price span {
+    font-size: 7px !important;
+    font-weight: bold !important;
+  }
+  .note ,.note span{
+    font-size:xx-small!important;
+       
+
+  }
 }
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   .add-small-on-sm {
     font-size: 0.7rem;
     white-space: nowrap;
@@ -345,13 +377,6 @@ media query
   .btc-image {
     width: 20px;
     height: 20px;
-  }
-     .box-up{
-    font-size: xx-small!important;
-  }
-  .price,
-  .price span {
-    font-size: x-small !important;
   }
 }
 @media (max-width: 991.98px) and (min-width: 768px) {
@@ -366,15 +391,14 @@ media query
     height: auto;
     max-width: 100%;
   }
-  nav li{
+  nav li {
     font-size: smaller;
   }
-
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .box-up  {
-        font-size: xx-small; 
-    }
+  .box-up {
+    font-size: xx-small;
+  }
 }
 
 @media (max-width: 990px) {
@@ -386,10 +410,9 @@ media query
   .add-x-small-on-md {
     font-size: 0.55rem !important;
   }
-    .steps {
+  .steps {
     border-left: none !important;
     border-bottom: 1px solid var(--main-purple);
     margin-bottom: 15px !important;
   }
- 
 }
